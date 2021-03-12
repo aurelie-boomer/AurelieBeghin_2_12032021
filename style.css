@@ -1,16 +1,12 @@
 body{
     font-family: 'Raleway';sans-serif;
-    font-size: small;   
+    font-size: small; 
+     
 }
 
 body a{
     text-decoration: none;
     color: black;
-
-
-.navbar{
-
-}
 
 }
 footer{
@@ -33,22 +29,29 @@ footer{
 .populaire{
     background-color: #F2F2F2;
     float: right;
+    
 }
 ul{
     list-style: none;
 }
-#buttom{
+#buttom{ /*bouton bleu recherche*/
     color:white;
     background-color: #0065FC;
-    border-radius:0px 50px 50px 0px;
+    border-radius:0px 10px 10px 0px;
+    padding: 0.5rem;
 
 }
 #input{  /*champ de recherche marseille,france*/
 font-weight: bold;
+padding: 0.5rem;
 }
-.cercle{
-    border-radius: 100%;  /*pour faire un rond autour de l'icone*/
+.info{
+    border-radius: 30%;  
+    background-color: #DEEBFF;
+    border: black solid 1px;
+    color: #0065FC;
 }
+
 
 .navbar{
     display: flex;
@@ -62,11 +65,36 @@ font-weight: bold;
     display: flex;
     font-weight: bold;
 }
-a:hover{
-    color: #0065FC;
-}
-
-.navigation-lien:hover {
+navigation-lien:hover {
     border-top: 0.15rem #0065FC solid;
     
   } 
+  .bouton-filtre{
+      display: flex;
+      justify-content: space-between;
+      border-radius: 100%;
+      color:black;
+      border-radius: 2rem;  
+    background-color: white;
+    border: black solid 1px;
+      
+
+  }
+  .blue { /*couleur étoiles*/
+      color: #0065FC;
+      
+  }
+  figcaption{
+      font-weight: bold;
+  }
+  .gras{ /*bold "afficher plus*/
+      font-weight: bold;
+  }
+  .info-logement{
+      display: flex;
+  }
+  label{ /*icone localisation*/
+    border-radius: 0.5rem 0rem 0rem 0.5rem;  
+    border: 1px solid black;
+    padding:0.5rem
+  
