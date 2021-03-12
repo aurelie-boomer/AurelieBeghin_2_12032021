@@ -1,0 +1,72 @@
+body{
+    font-family: 'Raleway';sans-serif;
+    font-size: small;   
+}
+
+body a{
+    text-decoration: none;
+    color: black;
+
+
+.navbar{
+
+}
+
+}
+footer{
+    display: flex;
+    justify-content: flex-start;
+    background-color: #F2F2F2;
+    line-height: 2;
+    
+}
+
+.hebergement{
+    background-color: #F2F2F2;
+    display: grid;
+}
+      
+.hebergement > article {
+        
+}
+
+.populaire{
+    background-color: #F2F2F2;
+    float: right;
+}
+ul{
+    list-style: none;
+}
+#buttom{
+    color:white;
+    background-color: #0065FC;
+    border-radius:0px 50px 50px 0px;
+
+}
+#input{  /*champ de recherche marseille,france*/
+font-weight: bold;
+}
+.cercle{
+    border-radius: 100%;  /*pour faire un rond autour de l'icone*/
+}
+
+.navbar{
+    display: flex;
+    justify-content: flex-end;
+}
+.ancre{
+    display: flex;
+}
+
+.filtres{
+    display: flex;
+    font-weight: bold;
+}
+a:hover{
+    color: #0065FC;
+}
+
+.navigation-lien:hover {
+    border-top: 0.15rem #0065FC solid;
+    
+  }
