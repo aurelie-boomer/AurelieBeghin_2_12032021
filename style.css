@@ -1,7 +1,6 @@
 body{
     font-family: 'Raleway';Arial;sans-serif;
     font-size: small; 
-    m
      
 }
 
@@ -10,112 +9,137 @@ body a{
     color: black;
 
 }
-footer{
-    display: flex;
-    justify-content: flex-start;
-    background-color: #F2F2F2;
-    line-height: 2rem;
-    
-}
 
-.hebergement{
-    background-color: #F2F2F2;
-    display: grid;
-    
+main{
+    margin: 3rem;
 }
-      
-.hebergement > article {
-        
-}
-
-.populaire{
-    background-color: #F2F2F2;
-    float: right;
-    
+.majuscule{
+    text-transform: capitalize;
 }
 ul{
     list-style: none;
 }
-#buttom{ /*bouton bleu recherche*/
-    color:white;
-    background-color: #0065FC;
-    border-radius:0px 10px 10px 0px;
-    padding: 0.5rem;
-
-}
-#input{  /*champ de recherche marseille,france*/
-font-weight: bold;
-padding: 0.5rem;
-
-}
-.info{ /*bulle du I*/
-    border-radius: 1rem;  
-    border: black solid 1px;
-    color: #0065FC;
-    padding: 0.5rem;
-}
-
-
 .navbar{
     display: flex;
     justify-content: flex-end;
 }
+.survol-inscription:hover{
+    color:black;
+    font-weight: bold;
+    font-size: medium;
+
+}
+.navigation-lien:hover {
+    border-top: 0.15rem #0065FC solid;
+    color: #0065FC;
+    
+} 
 .ancre{
     display: flex;
 }
-
-.filtres{
-    display: flex;
-    font-weight: bold;
-}
-navigation-lien:hover {
-    border-top: 0.15rem #0065FC solid;
-    
-  } 
-  .bouton-filtre{
-      display: flex;
-      justify-content: space-between;
-      color:black;
-      border-radius: 2rem;  
-    background-color: white;
-    border: grey solid 1px;
-    opacity: 0.7;
-    padding: 0.2rem 0.2rem 0.2rem 0rem;
-      
-
-  }
-  .blue { /*couleur étoiles*/
-      color: #0065FC;
-      
-  }
-  figcaption{
-      font-weight: bold;
-  }
-  .largeur-police{ /*bold "afficher plus*/
-      font-weight: bold;
-  }
-  .info-logement{
-      display: flex;
-  }
-  label{ /*icone localisation*/
+label{ /*icone localisation*/
     border-radius: 0.5rem 0rem 0rem 0.5rem;  
     background-color: #F2F2F2;
-    padding:0.5rem
+    padding:0.7rem
+}
+#input{  /*champ de recherche marseille,france*/
+    font-weight: bold;
+    padding: 0.5rem;
+}
+#buttom{ /*bouton bleu recherche*/
+        color:white;
+        background-color: #0065FC;
+        border-radius:0px 10px 10px 0px;
+        padding: 0.5rem;
+}
+#buttom:hover{ /*survol du bouton recherche*/
+        cursor: pointer;
+        width: 6rem;
+        height: 2.5rem;
+}
+.filtres{
+        display: flex;
+        font-weight: bold;
+}
+.bulle{ /*bulle icone filtres*/
+        background-color: #DEEBFF;
+        padding: 0.5rem;
+        border-radius: 1rem;
+        color: #0065FC;
+}
+  
+.survol-filtre:hover{
+        background-color: #0065FC;
+  
+}
     
-  }
-  main{
-      margin: 3rem;
-  }
-  .bulle{ /*bulle icone filtres*/
-      background-color: #DEEBFF;
-      padding: 0.5rem;
-      border-radius: 1rem;
-      color: #0065FC;
-  }
-  .majuscule{
-    text-transform: capitalize;
-  }
-  .survol-filtre:hover{
-      background-color: #0065FC;
+.bouton-filtre{
+          display: flex;
+          justify-content: space-between;
+          color:black;
+          border-radius: 2rem;  
+        background-color: white;
+        border: grey solid 1px;
+        opacity: 0.7;
+        padding: 0.2rem 0.2rem 0.2rem 0rem;
+             
+}
+.info{ /*bulle du I*/
+        border-radius: 1rem;  
+        border: black solid 1px;
+        color: #0065FC;
+        padding: 0.5rem;
+}
 
-  }
+.hebergement{
+    background-color: #F2F2F2;
+    display: flex;
+    border-radius: 2rem;
+    width: 65%;
+    
+}
+.blue { /*couleur étoiles*/
+    color: #0065FC;
+    
+}
+.grey{ /*couleur étoile grise*/
+    color: #D9D9D9;
+}
+
+.populaire{ 
+    background-color: #F2F2F2;
+    float: right;
+    border-radius: 2rem;
+    width: 30%;   
+}
+
+
+figcaption{
+      font-weight: bold;
+}
+.largeur-police{ /*bold "afficher plus*/
+      font-weight: bold;
+}
+.info-logement{
+      display: flex;
+}
+    
+article{ /*cartes hébergement*/
+      background-color: white;
+      width: 60%;
+} 
+      
+footer{
+        display: flex;
+        justify-content: flex-start;
+        background-color: #F2F2F2;
+        line-height: 2rem;
+        
+}
+.survol-pied:hover{
+    color: black;
+    font-weight: bold; 
+} 
+
+  
+  
