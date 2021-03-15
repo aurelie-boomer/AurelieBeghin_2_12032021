@@ -11,7 +11,7 @@ body a{
 }
 
 main{
-    margin: 3rem;
+    margin: 1rem;
 }
 .majuscule{
     text-transform: capitalize;
@@ -23,8 +23,12 @@ ul{
     display: flex;
     justify-content: flex-end;
 }
+.inscription a{
+    color: #0065FC;
+    font-weight: bold;
+}
 .survol-inscription:hover{
-    color:black;
+    color:#0065FC;
     font-weight: bold;
     font-size: medium;
 
@@ -88,15 +92,40 @@ label{ /*icone localisation*/
         border-radius: 1rem;  
         border: black solid 1px;
         color: #0065FC;
+        font-size: 0.6rem;
         padding: 0.5rem;
+        opacity: 0.7;
+}
+.info-logement{
+    display: flex;
+
+}
+.flex{
+    display: flex;
 }
 
-.hebergement{
+
+.hebergement{       /*container gris*/
     background-color: #F2F2F2;
     display: flex;
     border-radius: 2rem;
-    width: 65%;
+    width: 900px;
+    height: 600px;
     
+    
+}
+.container-hebergement{          /*div parent*/
+    display: flex;
+    place-self: center center;
+    
+
+}
+
+
+.arrondie{
+    border-radius: 2rem;
+    max-width: 60%;
+    max-height: 40%; 
 }
 .blue { /*couleur étoiles*/
     color: #0065FC;
@@ -105,38 +134,56 @@ label{ /*icone localisation*/
 .grey{ /*couleur étoile grise*/
     color: #D9D9D9;
 }
-
-.populaire{ 
-    background-color: #F2F2F2;
-    float: right;
-    border-radius: 2rem;
-    width: 30%;   
-}
-
-
-figcaption{
-      font-weight: bold;
-}
+article{ /*cartes hébergement*/
+    background-color: white;
+    width: 60%;  
+} 
 .largeur-police{ /*bold "afficher plus*/
       font-weight: bold;
 }
-.info-logement{
-      display: flex;
-}
+
+.populaire{ 
+    background-color: #F2F2F2;
+    border-radius: 2rem;
+    width: 30%; 
+    display: flex;
     
-article{ /*cartes hébergement*/
-      background-color: white;
-      width: 60%;
-} 
+}
+
+.container-populaire{
+    display: flex;
+    flex-direction: column;
+}
+.container-activité{
+    display: flex;
+    justify-content: center ;
+    
+}
+.bordure-activite{
+    border: black 1px solid;
+}
+
+figcaption{
+    font-weight: bold;
+    background-color: white;
+}
       
 footer{
-        display: flex;
-        justify-content: flex-start;
-        background-color: #F2F2F2;
-        line-height: 2rem;
         
+        background-color: #F2F2F2;
+        line-height: 2rem;     
 }
-.survol-pied:hover{
+.container-footer{
+    display: flex;
+    width: 80%;
+
+}
+
+footer h3{
+    padding-left: 2.5rem;
+}
+
+.survol-footer:hover{
     color: black;
     font-weight: bold; 
 } 
