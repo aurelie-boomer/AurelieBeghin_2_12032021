@@ -32,7 +32,7 @@ img{
     object-fit: cover;
     
 }
-.navbar{
+.navbar{                                             /*HEADER*/
     display: flex;
     justify-content: flex-end;
 }
@@ -54,7 +54,7 @@ img{
 } 
 .ancre{
     display: flex;
-}
+}                                                   /*RECHERCHE bouton*/       
 label{ /*icone localisation*/
     border-radius: 0.5rem 0rem 0rem 0.5rem;  
     background-color: #F2F2F2;
@@ -74,7 +74,7 @@ label{ /*icone localisation*/
         cursor: pointer;
         width: 6rem;
         height: 2.5rem;
-}
+}                                                    /*FILTRES BOUTON*/
 .filtres{   /*div parent filtres*/
         display: flex;
         font-weight: bold;
@@ -106,7 +106,7 @@ label{ /*icone localisation*/
         opacity: 0.7;
         padding: 0.2rem 0.2rem 0.2rem 0rem;
              
-}
+}                                                   /*INFO bulle*/
 .info{ /*bulle du I*/
         border-radius: 100%;  
         border: black solid 1px;
@@ -183,13 +183,6 @@ article{ /*cartes hébergement et populaires (blanc)*/
 }
 
 
-.arrondie-populaire{    /*image*/
-    overflow: hidden;
-    width: 100%;
-    height: 7rem;
-    width: 7rem;
-
-}
 .article-populaire{   /*article */
     border-radius: 1rem;
     width: 90%;
@@ -201,12 +194,23 @@ display: flex;
 justify-content: flex-start;
 
 }
+.arrondie-populaire{    /*image*/
+    overflow: hidden;
+    width: 100%;
+    height: 7rem;
+    width: 7rem;
+
+}
+.texte-populaire{
+    padding-top: 1rem;
+    padding-left:1rem;
+}
    
 
                                                              /*ACTIVITES*/
 .activité{
-    width: 90%; 
-    height:450px;
+    width: 100%; 
+    height:420px;
 
 }
 .container-activité{
@@ -217,11 +221,11 @@ justify-content: flex-start;
 .figure-activité{
     overflow: hidden;
     border-radius: 1rem;
-    width: 100%;
-    
+    width: 100%;  
+    border: black solid 2px;
     
 }
-.image-activité{   /*a changer en enlevant arrondie*/
+.image-activité{   
     width: 100%;
     height: 100%;
     min-height: 0%;
@@ -244,8 +248,18 @@ justify-content: flex-start;
 .activité3{
     grid-row: 4 / span 2;
 }
+.activité4{
+    grid-row: 1 / span 5;
 
+}
+.activité5{
+    grid-row: 1 / span 3;
 
+}
+.activité6{
+    grid-row: 4 / span 2;
+
+}
 .bordure-activite{
     border: black 1px solid;
 }
@@ -253,13 +267,15 @@ justify-content: flex-start;
 figcaption{
     font-weight: bold;
     background-color: white;
+    padding: 1rem;
 }
                                                    /*FOOTER*/
  
 footer{
         width: 100%;
         background-color: #F2F2F2;
-        line-height: 2rem;  
+        line-height: 2rem; 
+        height: 10rem; 
         
          
 }
@@ -267,16 +283,10 @@ footer{
     display: flex;
     justify-content: space-around;
     width: 75%;
-    
-
 }
-
-
 footer h3{
-    padding-left: 2.5rem;
-    
+    padding-left: 2.5rem;  
 }
-
 .survol-footer:hover{
     color: black;
     font-weight: bold; 
