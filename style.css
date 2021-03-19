@@ -5,9 +5,7 @@
 
 body{
     font-family: 'Raleway',Arial,sans-serif;
-    font-size: small; 
-    
-     
+    font-size: small;  
 }
 
 body a{
@@ -21,9 +19,7 @@ main{
 
     
 }
-.majuscule{
-    text-transform: capitalize;
-}
+
 ul{
     list-style: none;
 }
@@ -32,29 +28,42 @@ img{
     object-fit: cover;
     
 }
-.navbar{                                             /*HEADER*/
+header{                                              /*HEADER*/
+    margin: 2rem;
+    
+}
+.logo-reservia{
+    margin: 1.3rem;
+}
+.navbar{                                             
     display: flex;
     justify-content: flex-end;
 }
+.ancre{
+    display: flex;
+}  
+
+.navigation-lien:hover {
+    border-top: 0.15rem #0065FC solid;
+    color: #0065FC;
+    
+}  
 .inscription a{
     color: #0065FC;
     font-weight: bold;
-    float: right;
+    
 }
 .survol-inscription:hover{
     color:#0065FC;
     font-weight: bold;
     font-size: medium;
-
 }
-.navigation-lien:hover {
-    border-top: 0.15rem #0065FC solid;
-    color: #0065FC;
-    
-} 
-.ancre{
-    display: flex;
-}                                                   /*RECHERCHE bouton*/       
+.titres{
+    margin: 2rem;
+}
+
+
+                                                /*RECHERCHE bouton*/       
 label{ /*icone localisation*/
     border-radius: 0.5rem 0rem 0rem 0.5rem;  
     background-color: #F2F2F2;
@@ -73,11 +82,26 @@ label{ /*icone localisation*/
 #buttom:hover{ /*survol du bouton recherche*/
         cursor: pointer;
         width: 6rem;
-        height: 2.5rem;
+        height: 2rem;
 }                                                    /*FILTRES BOUTON*/
 .filtres{   /*div parent filtres*/
         display: flex;
         font-weight: bold;
+}
+.bouton-filtre{  
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color:black;
+    border-radius: 2rem;  
+    background-color: white;
+    border: #F2F2F2 solid  0.2rem ;    
+         
+} 
+
+.survol-filtre{
+    display: flex;
+    align-items: center;
 }
 .bulle{ /*bulle icone filtres*/
         background-color: #DEEBFF;
@@ -85,28 +109,18 @@ label{ /*icone localisation*/
         border-radius: 1rem;
         color: #0065FC;
 }
-  
-.survol-filtre:hover{
-        background-color: #0065FC;
+.majuscule{
+    text-transform: capitalize;
+}
+.bold{
+        font-weight: bold;
+    }
 
-  
-}
-.survol-filtre{
-    display: flex;
-    align-items: center;
-}
-    
-.bouton-filtre{
-          
-          justify-content: space-between;
-          color:black;
-          border-radius: 2rem;  
-        background-color: white;
-        border: grey solid 1px;
-        opacity: 0.7;
-        padding: 0.2rem 0.2rem 0.2rem 0rem;
-             
-}                                                   /*INFO bulle*/
+                                                      /*INFO bulle*/
+ .info-logement{
+        display: flex;
+                                                        
+    }                                                      
 .info{ /*bulle du I*/
         border-radius: 100%;  
         border: black solid 1px;
@@ -114,13 +128,11 @@ label{ /*icone localisation*/
         font-size: 0.6rem;
         padding: 0.5rem;
         opacity: 0.7;
-        margin: 10px;
+        margin: 2rem;
 }
-.info-logement{
-    display: flex;
-    
 
-}                                                           /*HEBERGEMENT*/
+  
+                                                     /*HEBERGEMENT*/
 
 .flex{   /* grande section hébergement+populaire*/
     display: flex;
@@ -130,32 +142,43 @@ label{ /*icone localisation*/
 
 .hebergement{       /*container gris*/
     background-color: #F2F2F2;
-    border-radius: 2rem;
-    width: 65%;
+    border-radius: 1rem;
+    width: 60%;
     height: 550px;
  
+}
+.padding-h2{
+    padding: 2rem;
 }
 .container-hebergement{          /*div parent*/
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-around
-      
+    justify-content: space-around;
+    margin: 1.5rem;    
   
-}
-
-.arrondie{  /*images*/
-    width: 100%;
-    height: 7rem; 
-    
-    
 }
 .arrondie-article{   /*article hébergement */
     border-radius: 1rem;
     width: 30%;
     overflow: hidden;
+    margin: 0.5rem;
 
+    
 }
+
+.arrondie{  /*images*/
+    width: 100%;
+    height: 7rem; 
+    border: white solid 8px; 
+    width: 94%;
+    border-radius: 1rem 1rem 0rem 0rem;
+}
+.texte-hébergemen{
+    padding-top: 1rem;
+    padding-left:1rem;
+}
+
 .blue { /*couleur étoiles*/
     color: #0065FC;
     
@@ -166,28 +189,39 @@ label{ /*icone localisation*/
 article{ /*cartes hébergement et populaires (blanc)*/
     background-color: white; 
     margin: auto; 
+
       
 } 
                                                   
-.largeur-police{ /*bold "afficher plus*/
+.afficher-plus{ 
       font-weight: bold;
+      margin: 2.5rem;
 }
                                                             /*POPULAIRE*/
 .populaire{   /*gris*/
     background-color: #F2F2F2;
-    border-radius: 2rem;
+    border-radius: 1rem;
     width: 30%;  
+    
+
 }
 .alignement-logo{
     display: flex;
+    justify-content: space-around;
+    
+}
+.padding-logo{
+    padding: 2.5rem;
+    font-size: medium;
 }
 
 
 .article-populaire{   /*article */
     border-radius: 1rem;
-    width: 90%;
+    width: 80%;
     overflow: hidden;
-    height: 7rem;
+    height: 8rem;
+    margin: 1.5rem;
 }
 .description-populaire{
 display: flex;
@@ -199,11 +233,17 @@ justify-content: flex-start;
     width: 100%;
     height: 7rem;
     width: 7rem;
+    border: white solid 8px;
+    border-radius: 1rem 0rem 0rem 1rem;
 
 }
 .texte-populaire{
     padding-top: 1rem;
     padding-left:1rem;
+}
+.padding-etoile{
+    padding-bottom: 1.5rem;
+    padding-top: 0.5rem;
 }
    
 
@@ -239,25 +279,34 @@ justify-content: flex-start;
 }
 .activité1{
     grid-row: 1 / span 5;
+    
 
 }
 .activité2{
     grid-row: 1 / span 3;
+   
+    
+    
 
 }
 .activité3{
     grid-row: 4 / span 2;
+    
+    
 }
 .activité4{
     grid-row: 1 / span 5;
+    
 
 }
 .activité5{
     grid-row: 1 / span 3;
+    
 
 }
 .activité6{
     grid-row: 4 / span 2;
+    
 
 }
 .bordure-activite{
@@ -276,6 +325,7 @@ footer{
         background-color: #F2F2F2;
         line-height: 2rem; 
         height: 10rem; 
+        
         
          
 }
