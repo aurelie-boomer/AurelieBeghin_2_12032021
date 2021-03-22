@@ -13,12 +13,11 @@ body a{
     color: black;
 
 }
-
 main{
     margin: 1rem;
-
-    
 }
+
+
 
 ul{
     list-style: none;
@@ -28,43 +27,80 @@ img{
     object-fit: cover;
     
 }
-header{                                              /*HEADER*/
-    margin: 2rem;
+.majuscule{
+    text-transform: capitalize;
+    padding: 0rem 0rem 0rem 0.5rem;
+}
+.bold{
+        font-weight: bold;
+    }
+article{ /*cartes hébergement et populaires (blanc)*/
+    background-color: white; 
+    margin: auto; 
+} 
+                                              /*HEADER*/
+                                           
+.logo-reservia{
+    margin-left: 1.5rem;
     
 }
-.logo-reservia{
-    margin: 1.3rem;
-}
-.navbar{                                             
+.bloc-lien{
     display: flex;
     justify-content: flex-end;
+    padding-top: 0.2rem;
 }
+
+
+.container-navbar{                                             
+    
+    padding-right: 4rem;
+    display: flex;
+    justify-content: flex-end;
+    
+    
+}
+
 .ancre{
     display: flex;
-}  
+    
+    
+} 
+.padding-ancre{
+    padding-right: 3rem;
+} 
 
-.navigation-lien:hover {
+.navigation-lien:hover {  /*survol lien*/
     border-top: 0.15rem #0065FC solid;
     color: #0065FC;
     
 }  
-.inscription a{
-    color: #0065FC;
-    font-weight: bold;
-    
+.navigation-lien{  /*barre bleue*/
+    padding-top: 2.5rem;
 }
+
 .survol-inscription:hover{
     color:#0065FC;
     font-weight: bold;
     font-size: medium;
 }
-.titres{
-    margin: 2rem;
+.color-inscription{
+    color: #0065FC;
+    font-weight: bold;
 }
+.titres{
+    margin: 2.5rem 2.5rem 0rem 1.5rem;
+    line-height: 1.5rem;
+}
+    
 
 
-                                                /*RECHERCHE bouton*/       
-label{ /*icone localisation*/
+                                                /*RECHERCHE bouton*/ 
+form{
+    margin-left: 1.5rem;
+    padding-top: 0.5rem;
+}                                                     
+                                             
+label { /*icone localisation*/
     border-radius: 0.5rem 0rem 0rem 0.5rem;  
     background-color: #F2F2F2;
     padding:0.7rem
@@ -76,8 +112,9 @@ label{ /*icone localisation*/
 #buttom{ /*bouton bleu recherche*/
         color:white;
         background-color: #0065FC;
+        border: none;
         border-radius:0px 10px 10px 0px;
-        padding: 0.5rem;
+        padding: 0.6rem;
 }
 #buttom:hover{ /*survol du bouton recherche*/
         cursor: pointer;
@@ -87,15 +124,24 @@ label{ /*icone localisation*/
 .filtres{   /*div parent filtres*/
         display: flex;
         font-weight: bold;
+        margin-top: 1.5rem;
+        
+}
+.titre-filtre{
+    margin: 1rem 1rem 1rem 1.5rem;
+    
 }
 .bouton-filtre{  
-    width: 100%;
+    
     display: flex;
     align-items: center;
     color:black;
-    border-radius: 2rem;  
+    border-radius: 1.5rem;  
     background-color: white;
-    border: #F2F2F2 solid  0.2rem ;    
+    border: rgba(211, 211,211) solid  0.1rem  ;  
+    margin-right: 1.5rem;  
+    padding-right: 1rem;
+    height: 10%;
          
 } 
 
@@ -108,18 +154,13 @@ label{ /*icone localisation*/
         padding: 0.5rem;
         border-radius: 1rem;
         color: #0065FC;
+        font-size: medium;
 }
-.majuscule{
-    text-transform: capitalize;
-}
-.bold{
-        font-weight: bold;
-    }
+
 
                                                       /*INFO bulle*/
  .info-logement{
-        display: flex;
-                                                        
+        display: flex;                                                   
     }                                                      
 .info{ /*bulle du I*/
         border-radius: 100%;  
@@ -129,6 +170,7 @@ label{ /*icone localisation*/
         padding: 0.5rem;
         opacity: 0.7;
         margin: 2rem;
+        
 }
 
   
@@ -143,39 +185,40 @@ label{ /*icone localisation*/
 .hebergement{       /*container gris*/
     background-color: #F2F2F2;
     border-radius: 1rem;
-    width: 60%;
-    height: 550px;
+    width: 65%;
+    
  
 }
 .padding-h2{
-    padding: 2rem;
+    padding: 2.3rem 2rem 0rem 2rem;
 }
-.container-hebergement{          /*div parent*/
+.container-hebergement{          /*div parent gris*/
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-    margin: 1.5rem;    
+    margin: 0.7rem;  
+    padding-top: 0.5rem;  
   
 }
-.arrondie-article{   /*article hébergement */
+.article-hebergement{   /*article hébergement */
     border-radius: 1rem;
-    width: 30%;
+    width: 25%;
     overflow: hidden;
-    margin: 0.5rem;
-
-    
+    margin: 0.8rem 0.5rem 0.8rem 0.5rem;
+    border-radius: 1rem ;
+    border: white solid 0.3rem;
+ 
 }
 
-.arrondie{  /*images*/
+.image-hebergement{  /*images*/
     width: 100%;
     height: 7rem; 
-    border: white solid 8px; 
-    width: 94%;
     border-radius: 1rem 1rem 0rem 0rem;
+    
 }
-.texte-hébergemen{
-    padding-top: 1rem;
+.texte-hébergement{
+    padding-top: 0.3rem;
     padding-left:1rem;
 }
 
@@ -186,16 +229,11 @@ label{ /*icone localisation*/
 .grey{ /*couleur étoile grise*/
     color: #D9D9D9;
 }
-article{ /*cartes hébergement et populaires (blanc)*/
-    background-color: white; 
-    margin: auto; 
-
-      
-} 
-                                                  
+                                              
 .afficher-plus{ 
       font-weight: bold;
       margin: 2.5rem;
+      
 }
                                                             /*POPULAIRE*/
 .populaire{   /*gris*/
@@ -203,37 +241,42 @@ article{ /*cartes hébergement et populaires (blanc)*/
     border-radius: 1rem;
     width: 30%;  
     
-
 }
 .alignement-logo{
     display: flex;
-    justify-content: space-around;
-    
+    justify-content: space-between;  
 }
 .padding-logo{
-    padding: 2.5rem;
+    padding: 2.5rem 2.5rem 0rem 0rem;
     font-size: medium;
+}
+.bloc-article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
 }
 
 
 .article-populaire{   /*article */
     border-radius: 1rem;
-    width: 80%;
+    width: 75%;
     overflow: hidden;
-    height: 8rem;
-    margin: 1.5rem;
+    height: 7.5rem;
+    margin: 0.8rem ;
+    margin-top: 1;
+    
+    border: white solid 0.3rem;
 }
 .description-populaire{
 display: flex;
 justify-content: flex-start;
 
+
 }
 .arrondie-populaire{    /*image*/
-    overflow: hidden;
-    width: 100%;
-    height: 7rem;
-    width: 7rem;
-    border: white solid 8px;
+    height: 9rem;
+    width: 7rem; 
     border-radius: 1rem 0rem 0rem 1rem;
 
 }
@@ -242,7 +285,7 @@ justify-content: flex-start;
     padding-left:1rem;
 }
 .padding-etoile{
-    padding-bottom: 1.5rem;
+    padding-bottom: 2rem;
     padding-top: 0.5rem;
 }
    
@@ -250,13 +293,15 @@ justify-content: flex-start;
                                                              /*ACTIVITES*/
 .activité{
     width: 100%; 
-    height:420px;
-
+    height: 30%;
+    
 }
 .container-activité{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(5, 4rem);
+    row-gap: 2rem;
+    column-gap: 2rem;
 }
 .figure-activité{
     overflow: hidden;
@@ -335,7 +380,8 @@ footer{
     width: 75%;
 }
 footer h3{
-    padding-left: 2.5rem;  
+    padding-left: 2.5rem; 
+    padding-top: 1rem; 
 }
 .survol-footer:hover{
     color: black;
