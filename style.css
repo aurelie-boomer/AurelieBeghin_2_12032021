@@ -31,33 +31,24 @@ img{
     text-transform: capitalize;
     padding: 0rem 0rem 0rem 0.5rem;
 }
-.bold{
-        font-weight: bold;
-    }
+
 article{ /*cartes hébergement et populaires (blanc)*/
     background-color: white; 
     margin: auto; 
 } 
-                                              /*HEADER*/
-                                           
+                                                  /*HEADER*/
+
+.box-header{
+
+}                                        
 .logo-reservia{
     margin-left: 1.5rem;
     
 }
-.bloc-lien{
-    display: flex;
-    justify-content: flex-end;
-    padding-top: 0.2rem;
-}
-
-
 .container-navbar{                                             
-    
     padding-right: 4rem;
     display: flex;
     justify-content: flex-end;
-    
-    
 }
 
 .ancre{
@@ -106,9 +97,10 @@ label { /*icone localisation*/
     padding:0.7rem
 }
 #input{  /*champ de recherche marseille,france*/
-    font-weight: bold;
+    
     padding: 0.5rem;
 }
+
 #buttom{ /*bouton bleu recherche*/
         color:white;
         background-color: #0065FC;
@@ -119,7 +111,7 @@ label { /*icone localisation*/
 #buttom:hover{ /*survol du bouton recherche*/
         cursor: pointer;
         width: 6rem;
-        height: 2rem;
+        height: 3rem;
 }                                                    /*FILTRES BOUTON*/
 .filtres{   /*div parent filtres*/
         display: flex;
@@ -131,28 +123,29 @@ label { /*icone localisation*/
     margin: 1rem 1rem 1rem 1.5rem;
     
 }
-.bouton-filtre{  
-    
+.bloc-filtre{  
     display: flex;
-    align-items: center;
     color:black;
     border-radius: 1.5rem;  
-    background-color: white;
     border: rgba(211, 211,211) solid  0.1rem  ;  
     margin-right: 1.5rem;  
     padding-right: 1rem;
-    height: 10%;
-         
+    height: 10%;        
 } 
-
-.survol-filtre{
+.bouton-filtre{
     display: flex;
-    align-items: center;
+    align-items: center;   
 }
+.majuscule:hover{        /*survol bouton filtre*/
+    font-size: medium;
+    color: #0065FC;
+}
+
 .bulle{ /*bulle icone filtres*/
         background-color: #DEEBFF;
-        padding: 0.5rem;
-        border-radius: 1rem;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
         color: #0065FC;
         font-size: medium;
 }
@@ -163,13 +156,12 @@ label { /*icone localisation*/
         display: flex;                                                   
     }                                                      
 .info{ /*bulle du I*/
-        border-radius: 100%;  
-        border: black solid 1px;
+        border-radius: 50%;  
+        border: rgba(211, 211,211) solid 1px;
         color: #0065FC;
-        font-size: 0.6rem;
-        padding: 0.5rem;
-        opacity: 0.7;
-        margin: 2rem;
+        width: 24px;
+        height: 24px;
+        
         
 }
 
@@ -186,29 +178,35 @@ label { /*icone localisation*/
     background-color: #F2F2F2;
     border-radius: 1rem;
     width: 65%;
-    
+    height: 38rem;
+    padding-bottom: 1rem;
  
 }
-.padding-h2{
-    padding: 2.3rem 2rem 0rem 2rem;
+.padding-titre{
+    padding: 2.3rem 2rem 0rem 2.5rem;
 }
 .container-hebergement{          /*div parent gris*/
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-    margin: 0.7rem;  
+    margin: 0.7rem 0.7rem 1.5rem 0.7rem;  
     padding-top: 0.5rem;  
   
 }
 .article-hebergement{   /*article hébergement */
     border-radius: 1rem;
-    width: 25%;
+    width: 28%;
+    height: 12rem;
     overflow: hidden;
     margin: 0.8rem 0.5rem 0.8rem 0.5rem;
     border-radius: 1rem ;
     border: white solid 0.3rem;
  
+}
+article p{
+    padding-bottom: 0.5rem;
+    padding-top: 0.3rem;
 }
 
 .image-hebergement{  /*images*/
@@ -218,8 +216,8 @@ label { /*icone localisation*/
     
 }
 .texte-hébergement{
-    padding-top: 0.3rem;
-    padding-left:1rem;
+    padding-top: 0.6rem;
+    padding-left: 0.7rem;
 }
 
 .blue { /*couleur étoiles*/
@@ -233,6 +231,7 @@ label { /*icone localisation*/
 .afficher-plus{ 
       font-weight: bold;
       margin: 2.5rem;
+      font-size: medium;
       
 }
                                                             /*POPULAIRE*/
@@ -242,13 +241,17 @@ label { /*icone localisation*/
     width: 30%;  
     
 }
-.alignement-logo{
+.bloc-titre{
     display: flex;
-    justify-content: space-between;  
+    justify-content: space-between; 
+    padding-bottom: 1.2rem; 
+}
+.padding-title{
+    padding: 2.3rem 2rem 0rem 3rem;
 }
 .padding-logo{
-    padding: 2.5rem 2.5rem 0rem 0rem;
-    font-size: medium;
+    padding: 2.4rem 2.5rem 0rem 0rem;
+    font-size: large;
 }
 .bloc-article{
     display: flex;
@@ -260,12 +263,10 @@ label { /*icone localisation*/
 
 .article-populaire{   /*article */
     border-radius: 1rem;
-    width: 75%;
+    width: 77%;
     overflow: hidden;
-    height: 7.5rem;
-    margin: 0.8rem ;
-    margin-top: 1;
-    
+    margin-top: 1rem;
+    margin-bottom: 0.3rem;
     border: white solid 0.3rem;
 }
 .description-populaire{
@@ -281,20 +282,22 @@ justify-content: flex-start;
 
 }
 .texte-populaire{
-    padding-top: 1rem;
+    padding-top: 0.7rem;
     padding-left:1rem;
 }
 .padding-etoile{
-    padding-bottom: 2rem;
+    padding-bottom: 3rem;
     padding-top: 0.5rem;
 }
    
 
                                                              /*ACTIVITES*/
 .activité{
-    width: 100%; 
-    height: 30%;
-    
+    margin: 1rem;
+}
+.h2-activité{
+    padding-bottom: 1.5rem;
+    padding-top: 2.3rem;
 }
 .container-activité{
     display: grid;
@@ -302,12 +305,13 @@ justify-content: flex-start;
     grid-template-rows: repeat(5, 4rem);
     row-gap: 2rem;
     column-gap: 2rem;
+    
 }
 .figure-activité{
     overflow: hidden;
     border-radius: 1rem;
     width: 100%;  
-    border: black solid 2px;
+    box-shadow: 2px 2px 2px #f2f2f2;
     
 }
 .image-activité{   
@@ -316,7 +320,7 @@ justify-content: flex-start;
     min-height: 0%;
     
 }
-.link-activité{ /* titre */
+.link-activité{ /* nom des img */
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr min-content ;
