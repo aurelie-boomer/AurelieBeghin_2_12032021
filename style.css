@@ -75,10 +75,7 @@ header{
     border-top: 0.15rem #0065FC solid;
     color: #0065FC;
     
-}  
-.navigation-lien{  /*barre bleue*/
-    
-}
+} 
 .bloc-inscrire{
     display: flex;
     align-items: center;
@@ -117,10 +114,12 @@ label { /*icone localisation*/
 .input{  /*champ de recherche marseille,france*/
     
     padding: 0.5rem;
+    border: #F2F2F2 solid 0.1rem; 
 }
 .input::placeholder{
     color: black;
     font-weight: bold;
+    
 
 }
 
@@ -180,7 +179,9 @@ label { /*icone localisation*/
 }
 .filtre-animaux{
     padding: 0rem 0rem 0rem 0.5rem;
-
+}
+.filtre-animaux:hover{
+    color: white;
 }
 
 
@@ -417,9 +418,6 @@ footer{
 footer h3{
     padding-left: 2.5rem; 
     padding-top: 1rem; 
-}
-.footer-propos{
-
 }
 .footer-hebergement{
     margin-left: 14rem;
