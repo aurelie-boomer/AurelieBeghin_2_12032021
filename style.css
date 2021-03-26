@@ -156,9 +156,10 @@ label { /*icone localisation*/
         border: rgba(211, 211,211) solid 1px;
         color: #0065FC;
         width: 24px;
-        height: 24px;
-        
-        
+        height: 24px;    
+}
+.center-p{
+    padding-top: 0.6rem;
 }
 
   
@@ -355,7 +356,10 @@ footer{
         width: 100%;
         background-color: #F2F2F2;
         line-height: 2rem; 
-        height: 10rem;         
+        height: 10rem;  
+        margin-top: 3rem;   
+        padding-bottom: 1.5rem; 
+        padding-top: 2rem;   
 }
 .container-footer{
     display: flex;
