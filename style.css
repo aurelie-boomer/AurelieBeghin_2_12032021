@@ -145,25 +145,25 @@ label { /*icone localisation*/
         
 }
 .titre-filtre{
-    margin: 1rem 1rem 1rem 1.5rem;
+    margin: 1rem 1.5rem 1rem 1.5rem;
     
 }
 .bloc-filtre{  
     display: flex;
     color:black;
     border-radius: 1.5rem;  
-    border: rgba(211, 211,211) solid  0.1rem  ;  
-    margin-right: 1.5rem;  
-    padding-right: 1rem;
-    height: 10%;        
+    border: rgba(211, 211,211) solid  0.1rem ; 
+    border-left-style: none; 
+    margin-right: 2rem;  
+    padding-right: 1rem;       
 } 
 .bouton-filtre{
     display: flex;
     align-items: center;   
 }
-.majuscule:hover{        /*survol bouton filtre*/
-    font-size: medium;
-    color: #0065FC;
+.bloc-filtre:hover{        /*survol bouton filtre*/
+    background-color: #0065FC;
+
 }
 
 .bulle{ /*bulle icone filtres*/
@@ -171,11 +171,16 @@ label { /*icone localisation*/
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 35px;
-        width: 35px;
+        height: 40px;
+        width: 40px;
         border-radius: 50%;
         color: #0065FC;
+        font-size: medium;
         
+}
+.filtre-animaux{
+    padding: 0rem 0rem 0rem 0.5rem;
+
 }
 
 
@@ -240,6 +245,7 @@ label { /*icone localisation*/
     margin: 0.8rem 0.5rem 0.8rem 0.5rem;
     border-radius: 1rem ;
     border: white solid 0.25rem;
+    
  
 }
 article p{
@@ -307,6 +313,7 @@ article p{
     margin-top: 1rem;
     margin-bottom: 0.3rem;
     border: white solid 0.25rem;
+    box-shadow: 2px 2px 2px #f2f2f2;
 }
 .description-populaire{
 display: flex;
