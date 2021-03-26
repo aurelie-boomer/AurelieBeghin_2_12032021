@@ -12,20 +12,22 @@
   </head>
   <body>
     <!--header-->
-    <header>
-    <div class="container-nav">
-      <a class="logo-reservia" chref="#"><img src="images/logo/Reservia.svg" alt="Logo Réservia" /></a>
-      <div class=container-navbar>
-       <nav>
-        <ul class="ancre">
-          <li class="padding-ancre"><a class="navigation-lien" href="#ancre1">Hébergements</a></li>
-          <li class="padding-ancre" ><a class="navigation-lien" href="#ancre2">Activités</a></li>
-        </ul> 
-       </nav>
-          <a class="survol-inscription color-inscription" href="#">S'inscrire</a>
+      <header>
+      <div class="bloc-reservia">
+          <a href="#"><img class="logo-reservia" src="images/logo/Reservia.svg" alt="Logo Réservia" /></a>
       </div>
-    </div>
-    </header>
+        <div class=container-navbar>
+          <nav>
+           <ul class="ancre">
+            <li class="padding-ancre"><a class="navigation-lien" href="#ancre1">Hébergements</a></li>
+            <li class="padding-ancre" ><a class="navigation-lien" href="#ancre2">Activités</a></li>
+           </ul> 
+          </nav>
+            <div>
+             <a class="survol-inscription color-inscription" href="#">S'inscrire</a>
+            </div>
+        </div>
+     </header>
 
     <!--corps-->
     <main>
@@ -39,7 +41,7 @@
         <!--bouton recherche-->
         <form method="" action="">
           
-          <label for="ville"><i class="fas fa-map-marker-alt"></i></label>
+          <label for="ville"><i class="fas fa-map-marker-alt"></i></label>    <!--logo loupe <i class="fas fa-search"></i>-->
           <input
             id="input"
             type="text"
@@ -53,30 +55,30 @@
         <div class="filtres">
           <h3 class="titre-filtre">Filtres</h3>
 
-          <div class="bouton-filtre">
+          <div class="bloc-filtre">
             
-              <a class="survol-filtre" href="#"><i class="fas bulle fa-money-bill-wave"></i>
+              <a class="bouton-filtre" href="#"><i class="fas bulle fa-money-bill-wave"></i>
             
-            <p class="majuscule bold">économique</p></a>
+            <p class="majuscule">économique</p></a>
             
           </div>
 
-          <div class="bouton-filtre">
+          <div class="bloc-filtre">
             <div >
-              <a class="survol-filtre" href="#"><i class="fas bulle fa-child" class="cercle"></i></div>
-            <p class="majuscule bold">Familial</p></a>
+              <a class="bouton-filtre" href="#"><i class="fas bulle fa-child" class="cercle"></i></div>
+            <p class="majuscule">Familial</p></a>
           </div>
 
-          <div class="bouton-filtre">
+          <div class="bloc-filtre">
             <div>
-              <a class="survol-filtre" href="#"> <i class="fas bulle fa-heart"></i></div>
-            <p class="majuscule bold">Romantique</p></a>
+              <a class="bouton-filtre" href="#"> <i class="fas bulle fa-heart"></i></div>
+            <p class="majuscule">Romantique</p></a>
           </div>
 
-          <div class="bouton-filtre">
-            <div >
-              <a class="survol-filtre" href="#"><i class="fas bulle fa-dog"></i></div>
-            <p class="majuscule bold">Animaux autorisés</p></a>
+          <div class="bloc-filtre">
+            <div>
+              <a class="bouton-filtre" href="#"><i class="fas bulle fa-dog"></i></div>
+            <p class="majuscule">Animaux autorisés</p></a>
           </div>
         </div>
 
@@ -90,7 +92,7 @@
       <section class="flex">
         <!--hébergements-->
         <div id="ancre1" class="hebergement">
-          <h2 class="padding-h2">Hébergements à Marseille</h2>
+          <h2 class="padding-titre">Hébergements à Marseille</h2>
 
           <div class="container-hebergement">        
               <article  class="article-hebergement">
@@ -177,8 +179,8 @@
 
         <!--les plus populaires-->
         <div class="populaire">
-          <div class="alignement-logo">
-          <h2 class="padding-h2">Les plus populaires</h2>
+          <div class="bloc-titre">
+          <h2 class="padding-title">Les plus populaires</h2>
             <div class="padding-logo"><i class="fas fa-chart-line"></i>
             </div>
           </div>
@@ -227,7 +229,7 @@
 
       <!--section activité-->
       <section id="ancre2" class="activité">
-        <h2>Activités à Marseille</h2>
+        <h2 class="h2-activité">Activités à Marseille</h2>
         <div class="container-activité">
           
             <figure class="activité1 figure-activité">
@@ -284,7 +286,7 @@
       <!--footer-->
     <footer>
       <div class="container-footer">
-        <div >
+        <div class="footer-propos">
           <h3 >A propos</h3>
           <ul>
             <li><a class="survol-footer" href="#">Fonctionnement du site</a></li>
@@ -293,7 +295,7 @@
           </ul>
         </div>
 
-        <div >
+        <div class="footer-hebergement">
           <h3>Nos hébergements</h3>
           <ul>
             <li><a class="survol-footer" href="#">Charte qualité</a></li>
@@ -301,7 +303,7 @@
           </ul>
         </div>
 
-        <div >
+        <div class="footer-assistance">
           <h3>Assistance</h3>
           <ul>
             <li><a class="survol-footer" href="#"> Centre d'aide</a></li>

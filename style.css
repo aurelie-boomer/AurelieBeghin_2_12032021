@@ -37,25 +37,21 @@ article{ /*cartes hébergement et populaires (blanc)*/
     margin: auto; 
 } 
                                                   /*HEADER*/
+.bloc-reservia{
 
-.box-header{
-
-}                                        
-.logo-reservia{
-    margin-left: 1.5rem;
-    
 }
+.logo-reservia{
+    margin-left: 1.5rem;   
+}                                
 .container-navbar{                                             
     padding-right: 4rem;
     display: flex;
     justify-content: flex-end;
 }
-
 .ancre{
-    display: flex;
-    
-    
+    display: flex;  
 } 
+
 .padding-ancre{
     padding-right: 3rem;
 } 
@@ -328,35 +324,21 @@ justify-content: flex-start;
 }
 .activité1{
     grid-row: 1 / span 5;
-    
-
 }
 .activité2{
     grid-row: 1 / span 3;
-   
-    
-    
-
 }
 .activité3{
-    grid-row: 4 / span 2;
-    
-    
+    grid-row: 4 / span 2;   
 }
 .activité4{
     grid-row: 1 / span 5;
-    
-
 }
 .activité5{
     grid-row: 1 / span 3;
-    
-
 }
 .activité6{
     grid-row: 4 / span 2;
-    
-
 }
 .bordure-activite{
     border: black 1px solid;
@@ -373,24 +355,36 @@ footer{
         width: 100%;
         background-color: #F2F2F2;
         line-height: 2rem; 
-        height: 10rem; 
-        
-        
-         
+        height: 10rem;         
 }
 .container-footer{
     display: flex;
-    justify-content: space-around;
-    width: 75%;
 }
 footer h3{
     padding-left: 2.5rem; 
     padding-top: 1rem; 
+}
+.footer-propos{
+
+}
+.footer-hebergement{
+    margin-left: 14rem;
+}
+.footer-assistance{
+    margin-left: 14rem;
 }
 .survol-footer:hover{
     color: black;
     font-weight: bold; 
 } 
 
-  
-  
+
+                                                 /*RESPONSIVE*/
+
+ @media all and (max-width: 1024px){
+     /*width: auto;*/
+}
+
+@media all and (max-device-width: 480px){   /*smartphone max device =largeur du périphérique*/
+
+}
