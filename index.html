@@ -17,13 +17,13 @@
           <a href="#"><img class="logo-reservia" src="images/logo/Reservia.svg" alt="Logo Réservia" /></a>
       </div>
         <div class=container-navbar>
-          <nav>
+          <nav class="box-nav">
            <ul class="ancre">
-            <li class="padding-ancre"><a class="navigation-lien" href="#ancre1">Hébergements</a></li>
-            <li class="padding-ancre" ><a class="navigation-lien" href="#ancre2">Activités</a></li>
+            <li class="padding-ancre navigation-lien"><a  href="#ancre1">Hébergements</a></li>
+            <li class="padding-ancre navigation-lien" ><a href="#ancre2">Activités</a></li>
            </ul> 
           </nav>
-            <div>
+            <div class="bloc-inscrire">
              <a class="survol-inscription color-inscription" href="#">S'inscrire</a>
             </div>
         </div>
@@ -40,15 +40,14 @@
 
         <!--bouton recherche-->
         <form method="" action="">
-          
           <label for="ville"><i class="fas fa-map-marker-alt"></i></label>    <!--logo loupe <i class="fas fa-search"></i>-->
           <input
-            id="input"
+            class="input"
             type="text"
             name="ville"
             id="ville"
             placeholder="Marseille,France"/>
-          <input id="buttom" type="button" value="Rechercher" />
+          <input class="buttom" type="button" value="Rechercher" />
         </form>
 
         <!--section filtres-->

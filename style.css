@@ -38,22 +38,35 @@ article{ /*cartes hébergement et populaires (blanc)*/
 } 
                                                   /*HEADER*/
 .bloc-reservia{
+    display: flex;
+    align-items: center;
 
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    height: 5rem;
 }
 .logo-reservia{
     margin-left: 1.5rem;   
 }                                
 .container-navbar{                                             
-    padding-right: 4rem;
     display: flex;
     justify-content: flex-end;
+    
+}
+.bloc-nav{
+    height: 100%;
 }
 .ancre{
-    display: flex;  
+    display: flex; 
+    height: 100%; 
 } 
 
 .padding-ancre{
-    padding-right: 3rem;
+    padding: 0rem 1.5rem;
+    display: flex;
+    align-items: center;
 } 
 
 .navigation-lien:hover {  /*survol lien*/
@@ -62,7 +75,12 @@ article{ /*cartes hébergement et populaires (blanc)*/
     
 }  
 .navigation-lien{  /*barre bleue*/
-    padding-top: 2.5rem;
+    
+}
+.bloc-inscrire{
+    display: flex;
+    align-items: center;
+    padding: 0rem 1.5rem;
 }
 
 .survol-inscription:hover{
@@ -85,6 +103,7 @@ article{ /*cartes hébergement et populaires (blanc)*/
 form{
     margin-left: 1.5rem;
     padding-top: 0.5rem;
+    display: flex;
 }                                                     
                                              
 label { /*icone localisation*/
@@ -92,25 +111,31 @@ label { /*icone localisation*/
     background-color: #F2F2F2;
     padding:0.7rem
 }
-#input{  /*champ de recherche marseille,france*/
+.input{  /*champ de recherche marseille,france*/
     
     padding: 0.5rem;
 }
+.input::placeholder{
+    color: black;
+    font-weight: bold;
 
-#buttom{ /*bouton bleu recherche*/
+}
+
+.buttom{ /*bouton bleu recherche*/
         color:white;
         background-color: #0065FC;
         border: none;
         border-radius:0px 10px 10px 0px;
         padding: 0.6rem;
 }
-#buttom:hover{ /*survol du bouton recherche*/
+.buttom:hover{ /*survol du bouton recherche*/
         cursor: pointer;
         width: 6rem;
         height: 3rem;
 }                                                    /*FILTRES BOUTON*/
 .filtres{   /*div parent filtres*/
         display: flex;
+        align-items: center;
         font-weight: bold;
         margin-top: 1.5rem;
         
@@ -139,11 +164,14 @@ label { /*icone localisation*/
 
 .bulle{ /*bulle icone filtres*/
         background-color: #DEEBFF;
-        height: 30px;
-        width: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 35px;
+        width: 35px;
         border-radius: 50%;
         color: #0065FC;
-        font-size: medium;
+        
 }
 
 
@@ -167,7 +195,7 @@ label { /*icone localisation*/
 
 .flex{   /* grande section hébergement+populaire*/
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 
@@ -198,7 +226,7 @@ label { /*icone localisation*/
     overflow: hidden;
     margin: 0.8rem 0.5rem 0.8rem 0.5rem;
     border-radius: 1rem ;
-    border: white solid 0.3rem;
+    border: white solid 0.25rem;
  
 }
 article p{
@@ -209,7 +237,7 @@ article p{
 .image-hebergement{  /*images*/
     width: 100%;
     height: 7rem; 
-    border-radius: 1rem 1rem 0rem 0rem;
+    
     
 }
 .texte-hébergement{
@@ -264,7 +292,7 @@ article p{
     overflow: hidden;
     margin-top: 1rem;
     margin-bottom: 0.3rem;
-    border: white solid 0.3rem;
+    border: white solid 0.25rem;
 }
 .description-populaire{
 display: flex;
@@ -275,7 +303,7 @@ justify-content: flex-start;
 .arrondie-populaire{    /*image*/
     height: 9rem;
     width: 7rem; 
-    border-radius: 1rem 0rem 0rem 1rem;
+    
 
 }
 .texte-populaire{
