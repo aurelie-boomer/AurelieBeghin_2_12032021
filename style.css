@@ -152,18 +152,18 @@ label { /*icone localisation*/
     
 }
 .bloc-filtre{  
-    display: flex;
-    
+    display: flex; 
     color:black;
     border-radius: 1.5rem;  
-    border: rgba(211, 211,211) solid  0.1rem ; 
+    border: rgba(217, 217,217) solid  2px ; 
     border-left-style: none; 
     margin-right: 2rem;  
-    padding-right: 1rem;       
+    padding-right: 1.3rem;       
 } 
 .bouton-filtre{
     display: flex;
     align-items: center;  
+    height: 45px;
 }
 .bloc-filtre:hover{        /*survol bouton filtre*/
     background-color: #0065FC;
@@ -178,6 +178,8 @@ label { /*icone localisation*/
         color: #0065FC;
         font-size: medium;
         padding: 15px;
+        width: 19px;
+        height: 19px;
         
 }
 .filtre-animaux{
@@ -198,7 +200,7 @@ label { /*icone localisation*/
     }                                                      
 .info{ /*bulle du I*/
         border-radius: 50%;  
-        border: rgba(211, 211,211) solid 1px;
+        border: rgba(217, 217,217) solid  1.5px ; 
         color: #0065FC;
         width: 24px;
         height: 24px; 
@@ -206,6 +208,7 @@ label { /*icone localisation*/
         display: flex;
         align-items: center;
         justify-content: center; 
+        font-size: small;
 }
 .center-p{
     padding-top: 0.6rem;
