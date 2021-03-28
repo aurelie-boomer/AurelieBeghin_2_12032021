@@ -1,11 +1,14 @@
 
 *{
     margin: 0;
+    
+        
 }
+
 
 body{
     font-family: 'Raleway',Arial,sans-serif;
-    font-size: small;  
+     
 }
 
 body a{
@@ -87,6 +90,7 @@ header{
     color:#0065FC;
     font-weight: bold;
     font-size: medium;
+    text-decoration: underline;
 }
 .color-inscription{
     color: #0065FC;
@@ -149,6 +153,7 @@ label { /*icone localisation*/
 }
 .bloc-filtre{  
     display: flex;
+    
     color:black;
     border-radius: 1.5rem;  
     border: rgba(211, 211,211) solid  0.1rem ; 
@@ -158,11 +163,10 @@ label { /*icone localisation*/
 } 
 .bouton-filtre{
     display: flex;
-    align-items: center;   
+    align-items: center;  
 }
 .bloc-filtre:hover{        /*survol bouton filtre*/
     background-color: #0065FC;
-
 }
 
 .bulle{ /*bulle icone filtres*/
@@ -170,11 +174,10 @@ label { /*icone localisation*/
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 40px;
-        width: 40px;
         border-radius: 50%;
         color: #0065FC;
         font-size: medium;
+        padding: 15px;
         
 }
 .filtre-animaux{
@@ -241,7 +244,6 @@ label { /*icone localisation*/
 .article-hebergement{   /*article hébergement */
     border-radius: 1rem;
     width: 28%;
-    height: 12rem;
     overflow: hidden;
     margin: 0.8rem 0.5rem 0.8rem 0.5rem;
     border-radius: 1rem ;
@@ -297,7 +299,8 @@ article p{
 }
 .padding-logo{
     padding: 2.4rem 2.5rem 0rem 0rem;
-    font-size: large;
+    font-size: x-large;
+    
 }
 .bloc-article{
     display: flex;
@@ -310,11 +313,12 @@ article p{
 .article-populaire{   /*article */
     border-radius: 1rem;
     width: 77%;
+    height: 8rem;
     overflow: hidden;
     margin-top: 1rem;
-    margin-bottom: 0.3rem;
+    margin-bottom: 1rem;
     border: white solid 0.25rem;
-    box-shadow: 2px 2px 2px #f2f2f2;
+    box-shadow: 2px 2px 5px #f2f2f2;
 }
 .description-populaire{
 display: flex;
@@ -333,14 +337,15 @@ justify-content: flex-start;
     padding-left:1rem;
 }
 .padding-etoile{
-    padding-bottom: 3rem;
-    padding-top: 0.5rem;
+    padding-bottom: 1.5rem;
+    
 }
    
 
                                                              /*ACTIVITES*/
 .activité{
     margin: 2rem;
+    padding-bottom:1rem ;
 }
 .h2-activité{
     padding-bottom: 1.5rem;
@@ -348,17 +353,18 @@ justify-content: flex-start;
 }
 .container-activité{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(5, 4rem);
-    row-gap: 2rem;
-    column-gap: 2rem;
+    grid-template-columns: repeat(4, 0.5fr);
+    grid-template-rows: repeat(8, 1.3rem);
+    row-gap: 2.5rem;
+    column-gap: 2.5rem;
     
 }
 .figure-activité{
     overflow: hidden;
     border-radius: 1rem;
     width: 100%;  
-    box-shadow: 2px 2px 2px #f2f2f2;
+    border: #F2F2F2 solid 1px;
+    box-shadow: 2px 2px 5px #f2f2f2;
     
 }
 .image-activité{   
@@ -366,34 +372,37 @@ justify-content: flex-start;
     height: 100%;
     min-height: 0%;
     
+    
 }
 .link-activité{ /* nom des img */
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr min-content ;
     height: 100%;
+
+
 }
 .activité1{
-    grid-row: 1 / span 5;
+    grid-row: 1 / span 8;
+    
 }
 .activité2{
-    grid-row: 1 / span 3;
-}
-.activité3{
-    grid-row: 4 / span 2;   
-}
-.activité4{
     grid-row: 1 / span 5;
 }
+.activité3{
+    grid-row: 6 / span 3;  
+    
+}
+.activité4{
+    grid-row: 1 / span 8;
+}
 .activité5{
-    grid-row: 1 / span 3;
+    grid-row: 1 / span 4;
 }
 .activité6{
-    grid-row: 4 / span 2;
+    grid-row: 5 / span 4;
 }
-.bordure-activite{
-    border: black 1px solid;
-}
+
 
 figcaption{
     font-weight: bold;
@@ -440,3 +449,9 @@ footer h3{
 @media all and (max-device-width: 480px){   /*smartphone max device =largeur du périphérique*/
 
 }
+
+/*Il est demandé d’adapter le site aux mobile, tablette et pc
+mobile max-width: 768px
+Tablette: max-width: 990px
+Pc min-width: 992px
+Tu peux ajouter pour les très grands écrans > 1200px et les plus petite <567px*/
