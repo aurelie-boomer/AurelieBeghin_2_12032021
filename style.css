@@ -100,6 +100,9 @@ header{
     margin: 2rem 2.5rem 0rem 2rem;
     line-height: 1.5rem;
 }
+.p-titre{
+    margin: 0.5rem 0rem;
+}
     
 
 
@@ -108,35 +111,37 @@ form{
     margin-left: 2rem;
     padding-top: 0.5rem;
     display: flex;
+    align-items: center;
 }                                                     
                                              
 label { /*icone localisation*/
-    border-radius: 0.5rem 0rem 0rem 0.5rem;  
+    border-radius: 1rem 0rem 0rem 1rem;  
     background-color: #F2F2F2;
-    padding:0.7rem
+    padding:1rem
 }
 .input{  /*champ de recherche marseille,france*/
     
-    padding: 0.5rem;
+    padding: 1rem 2.5rem 1rem 1rem;
     border: #F2F2F2 solid 0.1rem; 
 }
 .input::placeholder{
     color: black;
     font-weight: bold;
-    
-
+    font-size: medium;
 }
 
 .buttom{ /*bouton bleu recherche*/
         color:white;
         background-color: #0065FC;
         border: none;
-        border-radius:0px 10px 10px 0px;
-        padding: 0.6rem;
+        border-radius:0px 15px 15px 0px;
+        padding: 1rem;
+        width: 8rem;
+        font-size: medium;
 }
 .buttom:hover{ /*survol du bouton recherche*/
         cursor: pointer;
-        width: 6rem;
+        width: 9rem;
         height: 3rem;
 }                                                    /*FILTRES BOUTON*/
 .filtres{   /*div parent filtres*/
@@ -158,15 +163,14 @@ label { /*icone localisation*/
     border: rgba(217, 217,217) solid  2px ; 
     border-left-style: none; 
     margin-right: 2rem;  
-    padding-right: 1.3rem;       
-} 
-.bouton-filtre{
-    display: flex;
+    padding-right: 1.3rem;  
     align-items: center;  
-    height: 45px;
-}
+    height: 45px;     
+} 
+
 .bloc-filtre:hover{        /*survol bouton filtre*/
     background-color: #0065FC;
+    color: white;
 }
 
 .bulle{ /*bulle icone filtres*/
@@ -176,7 +180,7 @@ label { /*icone localisation*/
         justify-content: center;
         border-radius: 50%;
         color: #0065FC;
-        font-size: medium;
+        font-size: 1.2rem;
         padding: 15px;
         width: 19px;
         height: 19px;
@@ -251,6 +255,7 @@ label { /*icone localisation*/
     margin: 0.8rem 0.5rem 0.8rem 0.5rem;
     border-radius: 1rem ;
     border: white solid 0.25rem;
+    box-shadow: 2px 2px 5px #f2f2f2;
     
  
 }
@@ -357,7 +362,7 @@ justify-content: flex-start;
 .container-activité{
     display: grid;
     grid-template-columns: repeat(4, 0.5fr);
-    grid-template-rows: repeat(8, 1.3rem);
+    grid-template-rows: repeat(9, 0.9rem);
     row-gap: 2.5rem;
     column-gap: 2.5rem;
     
@@ -374,9 +379,20 @@ justify-content: flex-start;
     width: 100%;
     height: 100%;
     min-height: 0%;
-    
-    
 }
+.position-image2{
+    object-position: 50% 40%;
+}
+.position-image3{
+    object-position: 50% 10%;
+}
+.position-image5{
+    object-position: 50% 10%;
+}
+.position-image6{
+    object-position: 50% 10%;
+}
+
 .link-activité{ /* nom des img */
     display: grid;
     grid-template-columns: 1fr;
@@ -386,24 +402,24 @@ justify-content: flex-start;
 
 }
 .activité1{
-    grid-row: 1 / span 8;
+    grid-row: 1 / span 9;
     
 }
 .activité2{
     grid-row: 1 / span 5;
 }
 .activité3{
-    grid-row: 6 / span 3;  
+    grid-row: 6 / span 4;  
     
 }
 .activité4{
-    grid-row: 1 / span 8;
+    grid-row: 1 / span 9;
 }
 .activité5{
     grid-row: 1 / span 4;
 }
 .activité6{
-    grid-row: 5 / span 4;
+    grid-row: 5 / span 5;
 }
 
 
@@ -445,16 +461,59 @@ footer h3{
 
                                                  /*RESPONSIVE*/
 
- @media all and (max-width: 1024px){
+ @media screen and (max-width: 1024px){
      /*width: auto;*/
 }
 
-@media all and (max-device-width: 480px){   /*smartphone max device =largeur du périphérique*/
+@media screen and (max-device-width: 480px){   /*smartphone max device =largeur du périphérique*/
+    *{
+        width: 100%;
+    }
+    header{
+        display:block;
+        width: 100%;
+    }
+    .box-nav{
+        width: auto;                               /*overflow:hidden*/
+    }
+    .flex {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .hebergement{
+        background-color: white;
+    }
+    .container-hebergement{
+        display: block;
+    }
+    .container-activité{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(9, 0.9rem);
+        row-gap: 2.5rem;
+        column-gap: 2.5rem;
+        justify-content: center;
+        
+    }
+    footer{
+        height: auto;
+    }
+    .container-footer{
+        display: block;
+        margin: 0rem;
+    }
+    .footer-hebergement{
+        margin: 0rem;
+    }
+    .footer-assistance{
+        margin: 0rem;
+    }
+
 
 }
 
 /*Il est demandé d’adapter le site aux mobile, tablette et pc
-mobile max-width: 768px
-Tablette: max-width: 990px
-Pc min-width: 992px
+mobile max-width: 480px
+Tablette: max-width: 768px
+Pc min-width: 1024px
 Tu peux ajouter pour les très grands écrans > 1200px et les plus petite <567px*/
