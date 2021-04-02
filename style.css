@@ -73,7 +73,9 @@ header{
     display: flex;
     align-items: center;
 } 
-
+.navigation-lien{
+    border-top: 0.15rem #0065FC00 solid;
+}
 .navigation-lien:hover {  /*survol lien*/
     border-top: 0.15rem #0065FC solid;
     color: #0065FC;
@@ -139,11 +141,7 @@ label { /*icone localisation*/
         width: 8rem;
         font-size: medium;
 }
-.button:hover{ /*survol du bouton recherche*/
-        cursor: pointer;
-        width: 9rem;
-        height: 3rem;
-}   
+
 .button:before {
     content: "Rechercher";
 }                                                  /*FILTRES BOUTON*/
@@ -225,15 +223,16 @@ label { /*icone localisation*/
                                                      /*HEBERGEMENT*/
 
 .flex{   /* grande section hébergement+populaire*/
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 7fr 3fr;
+    column-gap: 2.5rem;
 }
 
 
 .hebergement{       /*container gris*/
     background-color: #F2F2F2;
     border-radius: 1rem;
-    width: 63%;
+    
     height: 38rem;
     padding-bottom: 1rem;
     margin-left: 2rem;
@@ -243,19 +242,14 @@ label { /*icone localisation*/
     padding: 2.3rem 2rem 0rem 2.5rem;
 }
 .container-hebergement{          /*div parent gris*/
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
-    margin: 0.7rem 0.7rem 1.5rem ;  
-    padding: 0.5rem 0.5rem 0rem ;
-  
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1.87rem;
+
 }
 .article-hebergement{   /*article hébergement */
     border-radius: 1rem;
-    width: 28%;
     overflow: hidden;
-    margin: 0.8rem 0.5rem 0.8rem 0.5rem;
     border-radius: 1rem ;
     border: white solid 0.25rem;
     box-shadow: 2px 2px 5px #f2f2f2;
@@ -267,9 +261,7 @@ article p{
 
 .image-hebergement{  /*images*/
     width: 100%;
-    height: 7rem; 
-    
-    
+    height: 7rem;  
 }
 .texte-hébergement{
     padding-top: 0.6rem;
@@ -298,7 +290,7 @@ article p{
 .populaire{   /*gris*/
     background-color: #F2F2F2;
     border-radius: 1rem;
-    width: 30%; 
+    
     margin-right: 2rem; 
     
 }
@@ -318,15 +310,11 @@ article p{
 .bloc-article{
     display: flex;
     flex-direction: column;
-    align-items: center;
-   
+    align-items: center;  
 }
-
-
 .article-populaire{   /*article */
     border-radius: 1rem;
-    width: 77%;
-    height: 8rem;
+    
     overflow: hidden;
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -334,16 +322,13 @@ article p{
     box-shadow: 2px 2px 5px #f2f2f2;
 }
 .description-populaire{
-display: flex;
-justify-content: flex-start;
-
-
+display: grid;
+grid-template-columns: 2fr 3fr;
 }
 .arrondie-populaire{    /*image*/
-    height: 9rem;
-    width: 7rem; 
-    
-
+     width: 100%; 
+     height: 0;
+     min-height: 100%;
 }
 .texte-populaire{
     padding-top: 0.7rem;
@@ -458,16 +443,15 @@ footer h3{
 .footer-assistance{
     margin-left: 14rem;
 }
-.survol-footer:hover{
-    color: black;
-    font-weight: bold; 
-} 
+
 
 
                                                  /*RESPONSIVE*/
 
  @media screen and (max-width: 1024px){
-     /*width: auto;*/
+     .description-populaire{
+
+     }
 }
 
 @media screen and (max-width: 480px){   /*smartphone max device =largeur du périphérique*/
