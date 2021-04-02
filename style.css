@@ -147,6 +147,7 @@ label { /*icone localisation*/
 }                                                  /*FILTRES BOUTON*/
 .filtres{   /*div parent filtres*/
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
         font-weight: bold;
         margin-top: 1.5rem;
@@ -232,8 +233,6 @@ label { /*icone localisation*/
 .hebergement{       /*container gris*/
     background-color: #F2F2F2;
     border-radius: 1rem;
-    
-    height: 38rem;
     padding: 2rem;
     margin-left: 2rem;
  
@@ -424,7 +423,7 @@ footer{
         width: 100%;
         background-color: #F2F2F2;
         line-height: 2rem; 
-        height: 10rem;  
+        
         margin-top: 3rem;   
         padding-bottom: 1.5rem; 
         padding-top: 2rem;   
@@ -451,6 +450,12 @@ footer h3{
  @media screen and (max-width: 1270px){
      .container-hebergement{
         grid-template-columns: repeat(2, 1fr);
+        
+     }
+     .flex{
+         align-items: start;
+       
+        grid-template-columns: 6fr 4fr;
         
      }
 }
@@ -484,8 +489,8 @@ footer h3{
     content: "\f002";
   }
   .filtres{                                /* filtres*/
-    display: flex;
-    flex-wrap: wrap;
+
+    
     font-weight: bold;
     margin-top: 1.5rem;
     margin-left: 1rem;
