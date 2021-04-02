@@ -234,12 +234,12 @@ label { /*icone localisation*/
     border-radius: 1rem;
     
     height: 38rem;
-    padding-bottom: 1rem;
+    padding: 2rem;
     margin-left: 2rem;
  
 }
 .padding-titre{
-    padding: 2.3rem 2rem 0rem 2.5rem;
+    margin-bottom: 1rem;
 }
 .container-hebergement{          /*div parent gris*/
     display: grid;
@@ -290,7 +290,7 @@ article p{
 .populaire{   /*gris*/
     background-color: #F2F2F2;
     border-radius: 1rem;
-    
+    padding: 2rem;
     margin-right: 2rem; 
     
 }
@@ -300,10 +300,10 @@ article p{
     padding-bottom: 1.2rem; 
 }
 .padding-title{
-    padding: 2.3rem 2rem 0rem 3rem;
+    
 }
 .padding-logo{
-    padding: 2.4rem 2.5rem 0rem 0rem;
+    
     font-size: x-large;
     
 }
@@ -448,9 +448,10 @@ footer h3{
 
                                                  /*RESPONSIVE*/
 
- @media screen and (max-width: 1024px){
-     .description-populaire{
-
+ @media screen and (max-width: 1270px){
+     .container-hebergement{
+        grid-template-columns: repeat(2, 1fr);
+        
      }
 }
 
