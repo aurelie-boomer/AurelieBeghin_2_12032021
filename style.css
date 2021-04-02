@@ -259,8 +259,6 @@ label { /*icone localisation*/
     border-radius: 1rem ;
     border: white solid 0.25rem;
     box-shadow: 2px 2px 5px #f2f2f2;
-    
- 
 }
 article p{
     padding-bottom: 0.5rem;
@@ -472,15 +470,13 @@ footer h3{
      /*width: auto;*/
 }
 
-@media screen and (max-device-width: 480px){   /*smartphone max device =largeur du périphérique*/
-    *{
-        
-    }
-    header{
+@media screen and (max-width: 480px){   /*smartphone max device =largeur du périphérique*/
+    
+    header{                                /*HEADER*/
         display:block;
         width: 100%;
     }
-    .box-nav{
+    .box-nav{                              /*NAV*/
         width: auto;                               /*overflow:hidden*/   /*white-space pour animaux*/
     }
     form {
@@ -489,7 +485,7 @@ footer h3{
         display: flex;
         align-items: center; 
     }
-    .button {
+    .button {                             /*BOUTON BLEU*/
         color: white;
         background-color: #0065FC;
         border: none;
@@ -502,7 +498,7 @@ footer h3{
     font-weight: 900;
     content: "\f002";
   }
-  .filtres{   /*div parent filtres*/
+  .filtres{                                /* filtres*/
     display: flex;
     flex-wrap: wrap;
     font-weight: bold;
@@ -525,17 +521,38 @@ footer h3{
     align-items: center;  
     height: 45px;     
 } 
-    .flex {
-        display: flex;
+    .flex {                                /*HEBERGEMENT */
+        display: flex;                     
         flex-direction: column-reverse;
     }
     .hebergement{
         background-color: white;
+        margin-left: 0rem;
+        width: 100%;
+    }
+    .padding-titre{
+        padding: 2.3rem 2rem 0rem 2rem;
     }
     .container-hebergement{
         display: block;
     }
-    .container-activité{
+    .article-hebergement{   /*article hébergement */
+        border-radius: 1rem;
+        width: 85%;
+        overflow: hidden;
+        /*margin: 0.8rem 0.5rem 0.8rem 2rem;*/
+        border-radius: 1rem ;
+        border: white solid 0.25rem;
+        box-shadow: 2px 2px 5px #f2f2f2;
+    }
+    .populaire{   /*gris*/                  /*POPULAIRE*/
+        background-color: #F2F2F2;
+        border-radius: 1rem;
+        width: 100%; 
+        margin-right: 2rem; 
+        
+    }
+    .container-activité{                    /*ACTIVITES*/
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(9, 0.9rem);
@@ -562,11 +579,7 @@ footer h3{
 
 }
 
-/*.button:before {
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    content: "\f002";
-  }*/
+
 
 /*Il est demandé d’adapter le site aux mobile, tablette et pc
 mobile max-width: 480px
