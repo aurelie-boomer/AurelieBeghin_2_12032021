@@ -130,7 +130,7 @@ label { /*icone localisation*/
     font-size: medium;
 }
 
-.buttom{ /*bouton bleu recherche*/
+.button{ /*bouton bleu recherche*/
         color:white;
         background-color: #0065FC;
         border: none;
@@ -139,11 +139,14 @@ label { /*icone localisation*/
         width: 8rem;
         font-size: medium;
 }
-.buttom:hover{ /*survol du bouton recherche*/
+.button:hover{ /*survol du bouton recherche*/
         cursor: pointer;
         width: 9rem;
         height: 3rem;
-}                                                    /*FILTRES BOUTON*/
+}   
+.button:before {
+    content: "Rechercher";
+}                                                  /*FILTRES BOUTON*/
 .filtres{   /*div parent filtres*/
         display: flex;
         align-items: center;
@@ -273,14 +276,18 @@ article p{
 .texte-hébergement{
     padding-top: 0.6rem;
     padding-left: 0.7rem;
+    padding-bottom: 0.4rem;
+    
 }
 
 .blue { /*couleur étoiles*/
     color: #0065FC;
+    font-size: small;
     
 }
 .grey{ /*couleur étoile grise*/
     color: #D9D9D9;
+    font-size: small;
 }
                                               
 .afficher-plus{ 
@@ -467,15 +474,57 @@ footer h3{
 
 @media screen and (max-device-width: 480px){   /*smartphone max device =largeur du périphérique*/
     *{
-        width: 100%;
+        
     }
     header{
         display:block;
         width: 100%;
     }
     .box-nav{
-        width: auto;                               /*overflow:hidden*/
+        width: auto;                               /*overflow:hidden*/   /*white-space pour animaux*/
     }
+    form {
+        margin-left: 1.5rem;
+        padding-top: 0.5rem;
+        display: flex;
+        align-items: center; 
+    }
+    .button {
+        color: white;
+        background-color: #0065FC;
+        border: none;
+        border-radius: 15px;
+        padding: 1rem;
+        font-size: medium;
+    }
+    .button:before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f002";
+  }
+  .filtres{   /*div parent filtres*/
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: bold;
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+    
+}
+.titre-filtre{
+    margin: 1rem 1.5rem 1rem 0rem;
+    
+}
+.bloc-filtre{  
+    display: flex; 
+    color:black;
+    border-radius: 1.5rem;  
+    border: rgba(217, 217,217) solid  2px ; 
+    border-left-style: none; 
+    margin-right: 2rem;  
+    padding-right: 1.3rem;  
+    align-items: center;  
+    height: 45px;     
+} 
     .flex {
         display: flex;
         flex-direction: column-reverse;
@@ -495,6 +544,7 @@ footer h3{
         justify-content: center;
         
     }
+    
     footer{
         height: auto;
     }
@@ -511,6 +561,12 @@ footer h3{
 
 
 }
+
+/*.button:before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f002";
+  }*/
 
 /*Il est demandé d’adapter le site aux mobile, tablette et pc
 mobile max-width: 480px
