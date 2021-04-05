@@ -1,11 +1,7 @@
 
 *{
-    margin: 0;
-    
-        
+    margin: 0;       
 }
-
-
 body{
     font-family: 'Raleway',Arial,sans-serif;
      
@@ -16,12 +12,6 @@ body a{
     color: black;
 
 }
-main{
-    margin: 1rem;
-}
-
-
-
 ul{
     list-style: none;
 }
@@ -50,7 +40,6 @@ article{ /*cartes hébergement et populaires (blanc)*/
 header{
     display: flex;
     justify-content: space-between;
-    height: 5rem;
 }
 .logo-reservia{
     margin-left: 1.5rem;   
@@ -158,6 +147,9 @@ label { /*icone localisation*/
     margin: 1rem 1.5rem 1rem 1.5rem;
     
 }
+.div-filtres{
+    display: flex;
+}
 .bloc-filtre{  
     display: flex; 
     color:black;
@@ -238,7 +230,7 @@ label { /*icone localisation*/
  
 }
 .padding-titre{
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 .container-hebergement{          /*div parent gris*/
     display: grid;
@@ -447,27 +439,87 @@ footer h3{
 
                                                  /*RESPONSIVE*/
 
- @media screen and (max-width: 1270px){
-     .container-hebergement{
+ @media screen and (max-width: 1337px){
+    .flex{
+        align-items: start;
+      
+       grid-template-columns: 6fr 4fr;  
+    }                                          
+    .container-hebergement{                  
         grid-template-columns: repeat(2, 1fr);
         
      }
-     .flex{
-         align-items: start;
-       
-        grid-template-columns: 6fr 4fr;
-        
+     .container-footer{
+         display: flex;
+         flex-wrap: wrap;
      }
 }
+@media screen and (max-width: 1110px) {
+    .container-footer{
+        margin-left: Orem;
+    }
+    .footer-hebergement{
+        margin-left: 2rem;
+    }
+    .footer-assistance{
+        margin-left: 2rem;
+    }
 
-@media screen and (max-width: 480px){   /*smartphone max device =largeur du périphérique*/
+    
+}
+
+@media screen and (max-width: 847px) {
+    .filtre{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: flex-start;
+        font-weight: bold;
+        margin-top: 1.5rem;
+        margin-left: 1rem; 
+    }
+    .bloc-filtre{
+        margin-right: 0.5rem;
+        
+    }
+    .div-filtres{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .flex{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .hebergement{
+        margin: orem;
+        background-color: white;
+    }
+    .populaire{
+        margin-right: 0rem;
+        padding: 1rem;
+        border-radius: Orem;
+    }
+    .bloc-article{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1.87rem;
+    }
+    .container-activité{
+        column-gap: 1rem;
+    }
+    
+}
+
+@media screen and (max-width: 480px){                                                /*smartphone max device =largeur du périphérique*/
     
     header{                                /*HEADER*/
         display:block;
         width: 100%;
     }
     .box-nav{                              /*NAV*/
-        width: auto;                               /*overflow:hidden*/   /*white-space pour animaux*/
+        width: auto; 
+           
+                                                                                 /*overflow:hidden*/   /*white-space pour animaux*/
     }
     form {
         margin-left: 1.5rem;
@@ -489,16 +541,21 @@ footer h3{
     content: "\f002";
   }
   .filtres{                                /* filtres*/
-
-    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
     font-weight: bold;
     margin-top: 1.5rem;
-    margin-left: 1rem;
-    
+    margin-left: 1rem;   
 }
 .titre-filtre{
     margin: 1rem 1.5rem 1rem 0rem;
     
+}
+.div-filtres{
+    display: flex;
+    flex-wrap: wrap;
 }
 .bloc-filtre{  
     display: flex; 
@@ -507,9 +564,10 @@ footer h3{
     border: rgba(217, 217,217) solid  2px ; 
     border-left-style: none; 
     margin-right: 2rem;  
+    margin-top: 1rem;
     padding-right: 1.3rem;  
     align-items: center;  
-    height: 45px;     
+    height: 45px;  
 } 
     .flex {                                /*HEBERGEMENT */
         display: flex;                     
@@ -526,11 +584,11 @@ footer h3{
     .container-hebergement{
         display: block;
     }
-    .article-hebergement{   /*article hébergement */
+    .article-hebergement{   
         border-radius: 1rem;
         width: 85%;
         overflow: hidden;
-        /*margin: 0.8rem 0.5rem 0.8rem 2rem;*/
+        margin: 0.8rem 0.5rem 0.8rem 2rem;
         border-radius: 1rem ;
         border: white solid 0.25rem;
         box-shadow: 2px 2px 5px #f2f2f2;
@@ -539,19 +597,20 @@ footer h3{
         background-color: #F2F2F2;
         border-radius: 1rem;
         width: 100%; 
-        margin-right: 2rem; 
-        
-    }
-    .container-activité{                    /*ACTIVITES*/
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(9, 0.9rem);
-        row-gap: 2.5rem;
-        column-gap: 2.5rem;
-        justify-content: center;
-        
+        margin-right: 2rem;   
     }
     
+    .activité{                             /*ACTIVITES*/
+        padding-bottom:1rem ;
+    }
+    .container-activité{                    
+        display: flex;
+        flex-wrap: wrap;   
+        
+        row-gap: 2.5rem;
+    }
+    
+
     footer{
         height: auto;
     }
