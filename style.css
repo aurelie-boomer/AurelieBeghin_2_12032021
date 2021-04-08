@@ -202,7 +202,7 @@ label { /*icone localisation*/
         color: #0065FC;
         width: 24px;
         height: 24px; 
-        margin-right: 0.5rem;  
+        margin-right: 1rem;  
         display: flex;
         align-items: center;
         justify-content: center; 
@@ -231,6 +231,7 @@ label { /*icone localisation*/
 }
 .padding-titre{
     margin-bottom: 2rem;
+    margin-top: 1rem;
 }
 .container-hebergement{          /*div parent gris*/
     display: grid;
@@ -289,6 +290,7 @@ article p{
     display: flex;
     justify-content: space-between; 
     padding-bottom: 1.2rem; 
+
 }
 .padding-title{
     
@@ -455,6 +457,9 @@ footer h3{
      }
 }
 @media screen and (max-width: 1110px) {
+    .padding-etoile{
+        padding-bottom: 0rem;
+    }
     .container-footer{
         margin-left: Orem;
     }
@@ -463,12 +468,16 @@ footer h3{
     }
     .footer-assistance{
         margin-left: 2rem;
-    }
-
-    
+    }  
 }
 
 @media screen and (max-width: 847px) {
+    .titre-filtre{
+        margin: 1rem 1.5rem 1rem 0.5rem;
+    }
+    .info-logement{
+        margin-left: 1rem;
+    }
     .filtre{
         display: flex;
         flex-wrap: wrap;
@@ -491,8 +500,13 @@ footer h3{
         flex-direction: column-reverse;
     }
     .hebergement{
-        margin: orem;
+        margin: 0rem;
+        margin-left: 0rem;
         background-color: white;
+    }
+    .bloc-titre{
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
     .populaire{
         margin-right: 0rem;
@@ -504,11 +518,81 @@ footer h3{
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 1.87rem;
     }
+    .article-populaire{
+        height: 10rem;
+    }
+    .texte-populaire{
+        height: 10rem;
+    }
+    .padding-etoile{
+        padding-bottom: 0rem;
+    }
+    .padding-responsive{
+        padding-top: 1.5rem;
+
+    }
+    
     .container-activité{
-        column-gap: 1rem;
+        display: grid;
+        grid-template-columns: repeat(2, 0.5fr);
+        grid-template-rows: repeat(18, 0.9rem);
+        row-gap: 2.5rem;
+        column-gap: 2.5rem;
+    }
+    .activité1{
+        grid-row: 1 / span 9;
+        
+    }
+    .activité2{
+        grid-row: 1 / span 5;
+    }
+    .activité3{
+        grid-row: 6 / span 4;  
+        
+    }
+    .activité4{
+        grid-row: 10 / span 9;
+    }
+    .activité5{
+        grid-row: 10 / span 4;
+    }
+    .activité6{
+        grid-row: 14 / span 5;
     }
     
 }
+@media screen and (max-width: 759px){
+    
+    .bloc-filtre{
+        margin-bottom: 1rem;
+
+    }
+    footer{
+        height: auto;
+        display: flex;
+    justify-content: center;
+    }
+    
+    .container-footer{
+        display: block;
+        margin: 0rem;
+    }
+    .footer-hebergement{
+        margin: 0rem;
+    }
+    .footer-assistance{
+        margin: 0rem;
+    }
+    
+}
+@media screen and (max-width:660px){
+    .bloc-article{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+
 
 @media screen and (max-width: 480px){                                                /*smartphone max device =largeur du périphérique*/
     
@@ -527,12 +611,19 @@ footer h3{
         display: flex;
         align-items: center; 
     }
+    label{
+        padding: 1.3rem;
+    }
+    .input{
+        padding: 1.3rem 5rem 1.3rem 1.5rem;
+        border-right-style: none;
+    }
     .button {                             /*BOUTON BLEU*/
         color: white;
         background-color: #0065FC;
         border: none;
         border-radius: 15px;
-        padding: 1rem;
+        padding: 1.3rem;
         font-size: medium;
     }
     .button:before {
@@ -551,11 +642,13 @@ footer h3{
 }
 .titre-filtre{
     margin: 1rem 1.5rem 1rem 0rem;
+    padding-left: 1rem;
     
 }
 .div-filtres{
     display: flex;
     flex-wrap: wrap;
+    padding-left: 1rem;
 }
 .bloc-filtre{  
     display: flex; 
@@ -563,8 +656,8 @@ footer h3{
     border-radius: 1.5rem;  
     border: rgba(217, 217,217) solid  2px ; 
     border-left-style: none; 
-    margin-right: 2rem;  
-    margin-top: 1rem;
+    margin-right: 0.8rem;  
+    margin-top: 0rem;
     padding-right: 1.3rem;  
     align-items: center;  
     height: 45px;  
@@ -577,6 +670,8 @@ footer h3{
         background-color: white;
         margin-left: 0rem;
         width: 100%;
+        padding-left: 0.5rem;
+        padding-top: 0rem;
     }
     .padding-titre{
         padding: 2.3rem 2rem 0rem 2rem;
@@ -595,13 +690,29 @@ footer h3{
     }
     .populaire{   /*gris*/                  /*POPULAIRE*/
         background-color: #F2F2F2;
-        border-radius: 1rem;
+        border-radius: 0rem;
         width: 100%; 
-        margin-right: 2rem;   
+        margin-right: 2rem;  
+        
+    }
+    .bloc-article{
+        display: flex;
+        flex-direction: column;
+    }
+    .padding-responsive{
+        padding-top: 1rem;
+    padding-bottom: 2rem;
+    }
+    .padding-nuit{
+        padding-top: 1rem;
+        padding-bottom: 2rem;
     }
     
     .activité{                             /*ACTIVITES*/
         padding-bottom:1rem ;
+    }
+    .h2-activité{
+        padding-top: 0rem;
     }
     .container-activité{                    
         display: flex;
@@ -613,6 +724,8 @@ footer h3{
 
     footer{
         height: auto;
+        display: flex;
+        justify-content: left;
     }
     .container-footer{
         display: block;
