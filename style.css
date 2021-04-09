@@ -44,10 +44,10 @@ nav a:hover{
     color:#0065fc
 
 }
-.container-navbar {
-  display: flex;
-  justify-content: flex-end;
+.box-nav{
+  margin-left: auto;
 }
+
 .bloc-nav {
   height: 100%;
 }
@@ -564,6 +564,13 @@ footer h3 {
   }
 }
 @media screen and (max-width: 660px) {
+  
+    
+  
+  .p-titre{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
   .bloc-article {
     display: flex;
     flex-direction: column;
@@ -574,16 +581,15 @@ footer h3 {
   /*smartphone max device =largeur du périphérique*/
 
   header {
-    /*HEADER*/
-    display: block;
-    width: 100%;
+    
+   
   }
   .logo-reservia{
       margin-left: 0rem;
   }
   nav li {
     border-bottom: 0.15rem solid #f2f2f2;
-    border-top: ;
+    border-top: none;
   }
   .navigation-lien:hover {
     /*survol lien*/
@@ -591,10 +597,6 @@ footer h3 {
     color: #0065fc;
     border-top: 0.15rem #0065fc00 solid;
   }
-  .container-navbar{
-      padding-top: 1.5rem;     
-  }
-
   .box-nav {
     width: auto;
   }
@@ -605,9 +607,7 @@ footer h3 {
       padding-left: 5rem;
   }
   .bloc-inscrire{
-    position: absolute;
-    top: 45px; right: 1px;
-    padding-right: 0rem;
+    
   }
   .p-titre{
       margin-top: 1rem;
