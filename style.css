@@ -1,4 +1,5 @@
 * {
+
   margin: 0;
 }
 body {
@@ -31,7 +32,6 @@ article {
   display: flex;
   align-items: center;
   margin-top: 2rem;
-  margin-left: 1.5rem;
 }
 header {
   display: flex;
@@ -87,7 +87,7 @@ nav a:hover{
   font-weight: bold;
 }
 .titres {
-  margin: 2rem 2.5rem 0rem 2rem;
+  margin: 2rem 0rem 0rem 2rem;
   line-height: 1.5rem;
 }
 .p-titre {
@@ -127,7 +127,6 @@ label {
   border: none;
   border-radius: 0px 15px 15px 0px;
   padding: 1rem;
-  width: 8rem;
   font-size: medium;
 }
 
@@ -225,7 +224,7 @@ label {
   /*container gris*/
   background-color: #f2f2f2;
   border-radius: 1rem;
-  padding: 2rem;
+  padding: 2rem 2rem 0rem 2rem;
   margin-left: 2rem;
 }
 .padding-titre {
@@ -244,7 +243,7 @@ label {
   overflow: hidden;
   border-radius: 1rem;
   border: white solid 0.25rem;
-  box-shadow: 2px 2px 5px #f2f2f2;
+  box-shadow: 2px 2px 5px #C0C0C0;
 }
 article p {
   padding-bottom: 0.5rem;
@@ -257,9 +256,7 @@ article p {
   height: 7rem;
 }
 .texte-hébergement {
-  padding-top: 0.6rem;
-  padding-left: 0.7rem;
-  padding-bottom: 0.4rem;
+  padding: 0.6rem 0rem 0.4rem 0.7rem;
 }
 
 .blue {
@@ -275,8 +272,9 @@ article p {
 
 .afficher-plus {
   font-weight: bold;
-  margin: 2.5rem;
+  margin: 2.5rem 0rem;
   font-size: medium;
+  padding-top: 1rem;
 }
 /*POPULAIRE*/
 .populaire {
@@ -289,7 +287,7 @@ article p {
 .bloc-titre {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 1.2rem;
+  padding-top: 1rem;
 }
 
 .padding-logo {
@@ -299,16 +297,15 @@ article p {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 1rem;
 }
 .article-populaire {
-  /*article */
   border-radius: 1rem;
-
   overflow: hidden;
   margin-top: 1rem;
   margin-bottom: 1rem;
   border: white solid 0.25rem;
-  box-shadow: 2px 2px 5px #f2f2f2;
+  box-shadow: 2px 2px 5px #C0C0C0;
 }
 .description-populaire {
   display: grid;
@@ -321,11 +318,10 @@ article p {
   min-height: 100%;
 }
 .texte-populaire {
-  padding-top: 0.7rem;
-  padding-left: 1rem;
+  padding: 0.7rem 0rem 0.5rem 1rem;
 }
 .padding-etoile {
-  padding-bottom: 1.5rem;
+  padding-bottom: 2rem;
 }
 
 /*ACTIVITES*/
@@ -348,8 +344,9 @@ article p {
   overflow: hidden;
   border-radius: 1rem;
   width: 100%;
+  height
   border: #f2f2f2 solid 1px;
-  box-shadow: 2px 2px 5px #f2f2f2;
+  box-shadow: 2px 2px 5px #C0C0C0;
 }
 .image-activité {
   width: 100%;
@@ -416,8 +413,7 @@ footer {
   margin-left: 1rem;
 }
 footer h3 {
-  padding-left: 2.5rem;
-  padding-top: 1rem;
+  padding: 1rem 0rem 1rem 2.5rem;
 }
 .footer-hebergement {
   margin-left: 14rem;
@@ -441,6 +437,7 @@ footer h3 {
     display: flex;
     flex-wrap: wrap;
   }
+  
 }
 @media screen and (max-width: 1110px) {
   .padding-etoile {
@@ -475,6 +472,7 @@ footer h3 {
   }
   .bloc-filtre {
     margin-right: 0.5rem;
+    margin-bottom: 1rem;
   }
   .div-filtres {
     display: flex;
@@ -486,25 +484,36 @@ footer h3 {
   }
   .hebergement {
     margin: 0rem;
-    margin-left: 0rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
     background-color: white;
+    padding: 0rem;
   }
+  .afficher-plus{
+    margin: 2.5rem 0rem 1rem 1rem;
+  }
+  .padding-titre{
+    margin-left: 1rem;
+    margin-top: 1rem;
+    padding-top: 2rem;
+  }
+
   .bloc-titre {
     padding-left: 1rem;
     padding-right: 1rem;
   }
   .populaire {
     margin-right: 0rem;
-    padding: 1rem;
+    padding: 0rem;
     border-radius: Orem;
   }
   .bloc-article {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1.87rem;
   }
   .article-populaire {
     height: 10rem;
+    width: 85%;
   }
   .texte-populaire {
     height: 10rem;
@@ -541,11 +550,10 @@ footer h3 {
   .activité6 {
     grid-row: 14 / span 5;
   }
-}
-@media screen and (max-width: 759px) {
-  .bloc-filtre {
-    margin-bottom: 1rem;
+  .h2-activité {
+    padding-top: 0rem;
   }
+}
   footer {
     height: auto;
     display: flex;
@@ -553,7 +561,7 @@ footer h3 {
   }
 
   .container-footer {
-    display: block;
+    
     margin: 0rem;
   }
   .footer-hebergement {
@@ -562,31 +570,12 @@ footer h3 {
   .footer-assistance {
     margin: 0rem;
   }
-}
+
 @media screen and (max-width: 660px) {
-  
-    
-  
-  .p-titre{
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-}
-  .bloc-article {
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  /*smartphone max device =largeur du périphérique*/
-
   header {
-    
-   
+    flex-wrap: wrap;
   }
-  .logo-reservia{
-      margin-left: 0rem;
-  }
+  
   nav li {
     border-bottom: 0.15rem solid #f2f2f2;
     border-top: none;
@@ -598,32 +587,44 @@ footer h3 {
     border-top: 0.15rem #0065fc00 solid;
   }
   .box-nav {
-    width: auto;
+    width: 100%;
+    order: 2;
+    margin-top: 2rem;
   }
-  .responsive-header1{
-      padding-right: 3rem;
+  .ancre{
+    justify-content: space-evenly;
+    padding-inline-start: 0px;
   }
-  .responsive-header2{
-      padding-left: 5rem;
+  .padding-ancre {
+    padding: 0rem ;
   }
+  .navigation-lien{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+  }
+  
   .bloc-inscrire{
-    
+    order: 1;
+    padding-right: 2rem;
+    padding-top: 2rem;
   }
-  .p-titre{
-      margin-top: 1rem;
-      margin-bottom: 2rem;
+  .titres{
+    margin: 2rem 0rem 2rem 2rem;
   }
+  
   form {
     margin-left: 1.5rem;
+    margin-right: 1.5rem;
     padding-top: 0.5rem;
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-columns: min-content auto min-content;
   }
   label {
     padding: 1.3rem;
   }
   .input {
-    padding: 1.3rem 5rem 1.3rem 1.5rem;
+    padding: 1.3rem 1rem 1.3rem 1.5rem;
     border-right-style: none;
   }
   .button {
@@ -673,6 +674,7 @@ footer h3 {
   }
   .info-logement{
     padding-left: 1rem;
+    margin-top: 1.5rem;
   }
   .bloc-section {
     /*HEBERGEMENT */
@@ -683,23 +685,26 @@ footer h3 {
     background-color: white;
     margin-left: 0rem;
     width: 100%;
-    padding-left: 0.5rem;
     padding-top: 0rem;
   }
   .padding-titre {
     padding: 2.3rem 2rem 0rem 2rem;
+    margin-left: 0rem;
   }
   .container-hebergement {
-    display: block;
+    display:flex;
+    flex-direction: column;
   }
   .article-hebergement {
     border-radius: 1rem;
     width: 85%;
     overflow: hidden;
-    margin: 0.8rem 0.5rem 0.8rem 2rem;
     border-radius: 1rem;
     border: white solid 0.25rem;
-    box-shadow: 2px 2px 5px #f2f2f2;
+    box-shadow: 2px 2px 5px #C0C0C0;
+  }
+  .afficher-plus{
+    margin: 2.5rem 0rem 1rem 2rem;
   }
   .populaire {
     /*gris*/ /*POPULAIRE*/
@@ -708,9 +713,20 @@ footer h3 {
     width: 100%;
     margin-right: 2rem;
   }
+  .bloc-titre{
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
   .bloc-article {
     display: flex;
     flex-direction: column;
+    
+  }
+  .article-populaire{
+    width: 85%;
+    height: 9rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0rem;
   }
   .padding-responsive {
     padding-top: 1rem;
@@ -733,6 +749,9 @@ footer h3 {
     flex-wrap: wrap;
     row-gap: 2.5rem;
     grid-template-columns: auto;
+  }
+  .figure-activité{
+    height: 14rem;
   }
 
   footer {
