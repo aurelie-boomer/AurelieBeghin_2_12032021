@@ -60,6 +60,7 @@ nav a:hover{
   padding: 0rem 1.5rem;
   display: flex;
   align-items: center;
+  padding-top: 2rem;
 }
 .navigation-lien {
   border-top: 0.15rem #0065fc00 solid;
@@ -68,12 +69,15 @@ nav a:hover{
   /*survol lien*/
   border-top: 0.15rem #0065fc solid;
   color: #0065fc;
+  padding-top: 2rem;
+  
 }
 .bloc-inscrire {
   display: flex;
   align-items: center;
   padding-left: 1.5rem;
   padding-right: 4rem;
+  padding-top: 2rem;
 }
 
 .survol-inscription:hover {
@@ -114,7 +118,7 @@ label {
   padding: 1rem 2.5rem 1rem 1rem;
   border: #f2f2f2 solid 0.1rem;
 }
-.input::placeholder {
+.input::placeholder {     /*pour  l ecriture de la ville prédéfinie*/
   color: black;
   font-weight: bold;
   font-size: medium;
@@ -132,7 +136,7 @@ label {
 
 .button:before {
   content: "Rechercher";
-} /*FILTRES BOUTON*/
+}                          /*FILTRES BOUTON*/
 .filtres {
   /*div parent filtres*/
   display: flex;
@@ -241,6 +245,7 @@ label {
   /*article hébergement */
   border-radius: 1rem;
   overflow: hidden;
+  width: 85%;
   border-radius: 1rem;
   border: white solid 0.25rem;
   box-shadow: 2px 2px 5px #C0C0C0;
@@ -344,7 +349,6 @@ article p {
   overflow: hidden;
   border-radius: 1rem;
   width: 100%;
-  height
   border: #f2f2f2 solid 1px;
   box-shadow: 2px 2px 5px #C0C0C0;
 }
@@ -403,6 +407,8 @@ footer {
   width: 100%;
   background-color: #f2f2f2;
   line-height: 2rem;
+  justify-content: left;
+  display: flex;
 
   margin-top: 3rem;
   padding-bottom: 1.5rem;
@@ -435,11 +441,21 @@ footer h3 {
   }
   .container-footer {
     display: flex;
-    flex-wrap: wrap;
+    margin-left: 1rem;
+  }
+  footer h3 {
+    padding: 1rem 0rem 1rem 2.5rem;
+  }
+  .footer-hebergement {
+    margin-left: 14rem;
+  }
+  .footer-assistance {
+    margin-left: 14rem;
   }
   
 }
 @media screen and (max-width: 1110px) {
+  
   .padding-etoile {
     padding-bottom: 0rem;
   }
@@ -454,7 +470,7 @@ footer h3 {
   }
 }
 
-@media screen and (max-width: 847px) {
+@media screen and (max-width: 900px) {
   .titre-filtre {
     margin: 1rem 1.5rem 1rem 0.5rem;
   }
@@ -497,19 +513,22 @@ footer h3 {
     margin-top: 1rem;
     padding-top: 2rem;
   }
-
+  .article-hebergement {
+    width: 85%;
+  }
   .bloc-titre {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
   .populaire {
     margin-right: 0rem;
     padding: 0rem;
-    border-radius: Orem;
+    border-radius:none;
   }
   .bloc-article {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    padding: 1rem;
   }
   .article-populaire {
     height: 10rem;
@@ -557,18 +576,6 @@ footer h3 {
   footer {
     height: auto;
     display: flex;
-    justify-content: center;
-  }
-
-  .container-footer {
-    
-    margin: 0rem;
-  }
-  .footer-hebergement {
-    margin: 0rem;
-  }
-  .footer-assistance {
-    margin: 0rem;
   }
 
 @media screen and (max-width: 660px) {
@@ -580,16 +587,10 @@ footer h3 {
     border-bottom: 0.15rem solid #f2f2f2;
     border-top: none;
   }
-  .navigation-lien:hover {
-    /*survol lien*/
-    border-bottom: 0.15rem #0065fc solid;
-    color: #0065fc;
-    border-top: 0.15rem #0065fc00 solid;
-  }
   .box-nav {
     width: 100%;
     order: 2;
-    margin-top: 2rem;
+    margin-top: 1rem;
   }
   .ancre{
     justify-content: space-evenly;
@@ -597,11 +598,22 @@ footer h3 {
   }
   .padding-ancre {
     padding: 0rem ;
+    padding-bottom: 1rem;
   }
   .navigation-lien{
     display: flex;
     justify-content: center;
     width: 50%;
+    padding-top: 1rem;
+    border-bottom: 0.15rem #f2f2f2 solid; 
+  }
+  .navigation-lien:hover {
+    /*survol lien*/
+    border-bottom: 0.15rem #0065fc solid;
+    color: #0065fc;
+    border-top: none;
+    padding-bottom: 1rem;
+    
   }
   
   .bloc-inscrire{
@@ -688,7 +700,7 @@ footer h3 {
     padding-top: 0rem;
   }
   .padding-titre {
-    padding: 2.3rem 2rem 0rem 2rem;
+    padding: 2rem 2rem 0rem 2rem;
     margin-left: 0rem;
   }
   .container-hebergement {
@@ -720,11 +732,11 @@ footer h3 {
   .bloc-article {
     display: flex;
     flex-direction: column;
+    padding:0rem 0rem 3rem 0rem ;
     
   }
   .article-populaire{
     width: 85%;
-    height: 9rem;
     margin-top: 1.5rem;
     margin-bottom: 0rem;
   }
@@ -734,7 +746,7 @@ footer h3 {
   }
   .padding-nuit {
     padding-top: 1rem;
-    padding-bottom: 2rem;
+    padding-bottom: 2.5rem;
   }
 
   .activité {
@@ -771,8 +783,4 @@ footer h3 {
   }
 }
 
-/*Il est demandé d’adapter le site aux mobile, tablette et pc
-mobile max-width: 480px
-Tablette: max-width: 768px
-Pc min-width: 1024px
-Tu peux ajouter pour les très grands écrans > 1200px et les plus petite <567px*/
+
