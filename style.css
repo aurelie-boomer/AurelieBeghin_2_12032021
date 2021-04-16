@@ -4,12 +4,16 @@
 }
 body {
   font-family: "Raleway", Arial, sans-serif;
+  /*display: flex;
+  flex-direction: column;
+  align-items: center;*/
 }
 
 body a {
   text-decoration: none;
   color: black;
 }
+
 ul {
   list-style: none;
 }
@@ -19,7 +23,7 @@ img {
 }
 .majuscule {
   text-transform: capitalize;
-  padding: 0rem 0rem 0rem 0.5rem;
+  padding: 0 0 0 0.5rem;
 }
 
 article {
@@ -36,6 +40,7 @@ article {
 header {
   display: flex;
   justify-content: space-between;
+  max-width: 1440px;
 }
 .logo-reservia {
   margin-left: 1.5rem;
@@ -57,7 +62,7 @@ nav a:hover{
 }
 
 .padding-ancre {
-  padding: 0rem 1.5rem;
+  padding: 0 1.5rem;
   display: flex;
   align-items: center;
   padding-top: 2rem;
@@ -68,9 +73,7 @@ nav a:hover{
 .navigation-lien:hover {
   /*survol lien*/
   border-top: 0.15rem #0065fc solid;
-  color: #0065fc;
-  padding-top: 2rem;
-  
+  color: #0065fc;  
 }
 .bloc-inscrire {
   display: flex;
@@ -90,12 +93,16 @@ nav a:hover{
   color: #0065fc;
   font-weight: bold;
 }
+main{
+  max-width: 1440px;
+  width: 100%;
+}
 .titres {
-  margin: 2rem 0rem 0rem 2rem;
+  margin: 2rem 2rem 0 2rem;
   line-height: 1.5rem;
 }
 .p-titre {
-  margin: 0.5rem 0rem;
+  margin: 0.5rem 0;
 }
 
 /*RECHERCHE bouton*/
@@ -108,7 +115,7 @@ form {
 
 label {
   /*icone localisation*/
-  border-radius: 1rem 0rem 0rem 1rem;
+  border-radius: 1rem 0 0 1rem;
   background-color: #f2f2f2;
   padding: 1rem;
 }
@@ -184,7 +191,7 @@ label {
   height: 19px;
 }
 .filtre-animaux {
-  padding: 0rem 0rem 0rem 0.5rem;
+  padding: 0 0 0 0.5rem;
 }
 .filtre-animaux:hover {
   color: white;
@@ -194,9 +201,7 @@ label {
 .info-logement {
   display: flex;
   align-items: center;
-  margin-left: 2.5rem;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin: 2rem 2.5rem 2rem 2.5rem;
 }
 .info {
   /*bulle du I*/
@@ -228,12 +233,11 @@ label {
   /*container gris*/
   background-color: #f2f2f2;
   border-radius: 1rem;
-  padding: 2rem 2rem 0rem 2rem;
+  padding: 2rem 2rem 0 2rem;
   margin-left: 2rem;
 }
 .padding-titre {
-  margin-bottom: 2rem;
-  margin-top: 1rem;
+  margin: 1rem 0 2rem 1rem;
 }
 .container-hebergement {
   /*div parent gris*/
@@ -260,8 +264,8 @@ article p {
   width: 100%;
   height: 7rem;
 }
-.texte-hébergement {
-  padding: 0.6rem 0rem 0.4rem 0.7rem;
+.texte-hebergement {
+  padding: 0.6rem 0 0.4rem 0.7rem;
 }
 
 .blue {
@@ -277,7 +281,7 @@ article p {
 
 .afficher-plus {
   font-weight: bold;
-  margin: 2.5rem 0rem;
+  margin: 2rem 1rem;
   font-size: medium;
   padding-top: 1rem;
 }
@@ -323,36 +327,36 @@ article p {
   min-height: 100%;
 }
 .texte-populaire {
-  padding: 0.7rem 0rem 0.5rem 1rem;
+  padding: 0.7rem 0 0.5rem 1rem;
 }
 .padding-etoile {
   padding-bottom: 2rem;
 }
 
 /*ACTIVITES*/
-.activité {
+.activites {
   margin: 2rem;
   padding-bottom: 1rem;
 }
-.h2-activité {
+.h2-activite {
   padding-bottom: 1.5rem;
   padding-top: 2.3rem;
 }
-.container-activité {
+.container-activite {
   display: grid;
   grid-template-columns: repeat(4, 0.5fr);
   grid-template-rows: repeat(9, 0.9rem);
   row-gap: 2.5rem;
   column-gap: 2.5rem;
 }
-.figure-activité {
+.figure-activite {
   overflow: hidden;
   border-radius: 1rem;
   width: 100%;
   border: #f2f2f2 solid 1px;
   box-shadow: 2px 2px 5px #C0C0C0;
 }
-.image-activité {
+.image-activite {
   width: 100%;
   height: 100%;
   min-height: 0%;
@@ -370,30 +374,33 @@ article p {
   object-position: 50% 10%;
 }
 
-.link-activité {
+.link-activite {
   /* nom des img */
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr min-content;
   height: 100%;
 }
-.activité1 {
+.activite1 {
   grid-row: 1 / span 9;
 }
-.activité2 {
+.activite2 {
   grid-row: 1 / span 5;
 }
-.activité3 {
+.activite3 {
   grid-row: 6 / span 4;
 }
-.activité4 {
+.activite4 {
   grid-row: 1 / span 9;
 }
-.activité5 {
+.activite5 {
   grid-row: 1 / span 4;
 }
-.activité6 {
+.activite6 {
   grid-row: 5 / span 5;
+}
+.activite{
+  width: 100%;
 }
 
 figcaption {
@@ -409,31 +416,26 @@ footer {
   line-height: 2rem;
   justify-content: left;
   display: flex;
-
+  max-width: 1440px;
   margin-top: 3rem;
   padding-bottom: 1.5rem;
   padding-top: 2rem;
 }
 .container-footer {
   display: flex;
-  margin-left: 1rem;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 1440px;
+  padding-right: 24rem;
 }
-footer h3 {
-  padding: 1rem 0rem 1rem 2.5rem;
-}
-.footer-hebergement {
-  margin-left: 14rem;
-}
-.footer-assistance {
-  margin-left: 14rem;
-}
+
+
 
 /*RESPONSIVE*/
 
 @media screen and (max-width: 1337px) {
   .bloc-section {
     align-items: start;
-
     grid-template-columns: 6fr 4fr;
   }
   .container-hebergement {
@@ -444,7 +446,10 @@ footer h3 {
     margin-left: 1rem;
   }
   footer h3 {
-    padding: 1rem 0rem 1rem 2.5rem;
+    padding: 1rem 0 1rem 2.5rem;
+  }
+  .footer-propos{
+    margin-left: 0rem;
   }
   .footer-hebergement {
     margin-left: 14rem;
@@ -457,17 +462,18 @@ footer h3 {
 @media screen and (max-width: 1110px) {
   
   .padding-etoile {
-    padding-bottom: 0rem;
+    padding-bottom: 0;
   }
   .container-footer {
-    margin-left: 0rem;
+    margin-left: 0;
   }
   .footer-hebergement {
-    margin-left: 2rem;
+    margin-left: 14rem;
   }
   .footer-assistance {
-    margin-left: 2rem;
+    margin-left: 14rem;
   }
+  
 }
 
 @media screen and (max-width: 900px) {
@@ -497,16 +503,17 @@ footer h3 {
   .bloc-section {
     display: flex;
     flex-direction: column-reverse;
+    align-items: stretch;
   }
   .hebergement {
     margin: 0rem;
     margin-left: 1rem;
     margin-right: 1rem;
     background-color: white;
-    padding: 0rem;
+    padding: 0;
   }
   .afficher-plus{
-    margin: 2.5rem 0rem 1rem 1rem;
+    margin: 2.5rem 0 1rem 1rem;
   }
   .padding-titre{
     margin-left: 1rem;
@@ -521,9 +528,9 @@ footer h3 {
     padding-right: 2rem;
   }
   .populaire {
-    margin-right: 0rem;
-    padding: 0rem;
-    border-radius:none;
+    margin-right: 0;
+    padding: 0;
+    border-radius:0;
   }
   .bloc-article {
     display: grid;
@@ -531,58 +538,58 @@ footer h3 {
     padding: 1rem;
   }
   .article-populaire {
-    height: 10rem;
     width: 85%;
   }
-  .texte-populaire {
-    height: 10rem;
-  }
   .padding-etoile {
-    padding-bottom: 0rem;
+    padding-bottom: 0;
   }
   .padding-responsive {
     padding-top: 1.5rem;
   }
-
-  .container-activité {
+  .container-activite {
     display: grid;
     grid-template-columns: repeat(2, 0.5fr);
     grid-template-rows: repeat(18, 0.9rem);
     row-gap: 2.5rem;
     column-gap: 2.5rem;
   }
-  .activité1 {
+  .activite1 {
     grid-row: 1 / span 9;
   }
-  .activité2 {
+  .activite2 {
     grid-row: 1 / span 5;
   }
-  .activité3 {
+  .activite3 {
     grid-row: 6 / span 4;
   }
-  .activité4 {
+  .activite4 {
     grid-row: 10 / span 9;
   }
-  .activité5 {
+  .activite5 {
     grid-row: 10 / span 4;
   }
-  .activité6 {
+  .activite6 {
     grid-row: 14 / span 5;
   }
-  .h2-activité {
-    padding-top: 0rem;
+  .h2-activite {
+    padding-top: 0;
   }
 }
   footer {
     height: auto;
     display: flex;
   }
+  .footer-hebergement{
+    margin-left: 1rem;
+  }
+  .footer-assistance{
+    margin-left: 1rem;
+  }
 
 @media screen and (max-width: 660px) {
   header {
     flex-wrap: wrap;
   }
-  
   nav li {
     border-bottom: 0.15rem solid #f2f2f2;
     border-top: none;
@@ -594,10 +601,10 @@ footer h3 {
   }
   .ancre{
     justify-content: space-evenly;
-    padding-inline-start: 0px;
+    padding: 0;
   }
   .padding-ancre {
-    padding: 0rem ;
+    padding: 0 ;
     padding-bottom: 1rem;
   }
   .navigation-lien{
@@ -605,15 +612,14 @@ footer h3 {
     justify-content: center;
     width: 50%;
     padding-top: 1rem;
-    border-bottom: 0.15rem #f2f2f2 solid; 
+    border-bottom: 0.20rem #f2f2f2 solid; 
   }
   .navigation-lien:hover {
     /*survol lien*/
-    border-bottom: 0.15rem #0065fc solid;
+    border-bottom: 0.20rem #0065fc solid;
     color: #0065fc;
     border-top: none;
     padding-bottom: 1rem;
-    
   }
   
   .bloc-inscrire{
@@ -622,7 +628,7 @@ footer h3 {
     padding-top: 2rem;
   }
   .titres{
-    margin: 2rem 0rem 2rem 2rem;
+    margin: 2rem 0 2rem 2rem;
   }
   
   form {
@@ -638,6 +644,7 @@ footer h3 {
   .input {
     padding: 1.3rem 1rem 1.3rem 1.5rem;
     border-right-style: none;
+    margin-right: -2rem;
   }
   .button {
     /*BOUTON BLEU*/
@@ -664,7 +671,7 @@ footer h3 {
     margin-left: 1rem;
   }
   .titre-filtre {
-    margin: 1rem 1.5rem 1rem 0rem;
+    margin: 1rem 1.5rem 1rem 0;
     padding-left: 1rem;
   }
   .div-filtres {
@@ -679,7 +686,7 @@ footer h3 {
     border: rgba(217, 217, 217) solid 2px;
     border-left-style: none;
     margin-right: 0.8rem;
-    margin-top: 0rem;
+    margin-top: 0;
     padding-right: 1.3rem;
     align-items: center;
     height: 45px;
@@ -695,13 +702,13 @@ footer h3 {
   }
   .hebergement {
     background-color: white;
-    margin-left: 0rem;
+    margin-left: 0;
     width: 100%;
-    padding-top: 0rem;
+    padding-top: 0;
   }
   .padding-titre {
-    padding: 2rem 2rem 0rem 2rem;
-    margin-left: 0rem;
+    padding: 2rem 2rem 0 2rem;
+    margin-left: 0;
   }
   .container-hebergement {
     display:flex;
@@ -716,12 +723,12 @@ footer h3 {
     box-shadow: 2px 2px 5px #C0C0C0;
   }
   .afficher-plus{
-    margin: 2.5rem 0rem 1rem 2rem;
+    margin: 2.5rem 0 1rem 2rem;
   }
   .populaire {
     /*gris*/ /*POPULAIRE*/
     background-color: #f2f2f2;
-    border-radius: 0rem;
+    border-radius: 0;
     width: 100%;
     margin-right: 2rem;
   }
@@ -732,13 +739,13 @@ footer h3 {
   .bloc-article {
     display: flex;
     flex-direction: column;
-    padding:0rem 0rem 3rem 0rem ;
+    padding:0 0 3rem 0 ;
     
   }
   .article-populaire{
     width: 85%;
     margin-top: 1.5rem;
-    margin-bottom: 0rem;
+    margin-bottom: 0;
   }
   .padding-responsive {
     padding-top: 1rem;
@@ -749,20 +756,21 @@ footer h3 {
     padding-bottom: 2.5rem;
   }
 
-  .activité {
-    /*ACTIVITES*/
+  .activites {
+    
     padding-bottom: 1rem;
   }
-  .h2-activité {
-    padding-top: 0rem;
+  .h2-activite {
+    padding-top: 0;
   }
-  .container-activité {
+  .container-activite {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
     row-gap: 2.5rem;
     grid-template-columns: auto;
   }
-  .figure-activité{
+  .figure-activite{
     height: 14rem;
   }
 
@@ -772,17 +780,18 @@ footer h3 {
     justify-content: left;
   }
   .container-footer {
-    display: block;
-    margin: 0rem;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
   }
   .footer-propos{
-    margin-left: 1rem;
+    margin-left: 0;
   }
   .footer-hebergement {
-    margin-left: 1rem;
+    margin-left: 0;
   }
   .footer-assistance {
-    margin-left: 1rem;
+    margin-left: 0;
   }
 }
 
