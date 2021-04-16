@@ -460,7 +460,7 @@ footer h3 {
     padding-bottom: 0rem;
   }
   .container-footer {
-    margin-left: Orem;
+    margin-left: 0rem;
   }
   .footer-hebergement {
     margin-left: 2rem;
@@ -775,11 +775,14 @@ footer h3 {
     display: block;
     margin: 0rem;
   }
+  .footer-propos{
+    margin-left: 1rem;
+  }
   .footer-hebergement {
-    margin: 0rem;
+    margin-left: 1rem;
   }
   .footer-assistance {
-    margin: 0rem;
+    margin-left: 1rem;
   }
 }
 
