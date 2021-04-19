@@ -231,7 +231,7 @@ label {
   /*container gris*/
   background-color: #f2f2f2;
   border-radius: 1rem;
-  padding: 2rem 2rem 0 2rem;
+  padding: 2rem ;
   margin-left: 2rem;
 }
 .padding-titre {
@@ -287,7 +287,7 @@ article p {
   /*gris*/
   background-color: #f2f2f2;
   border-radius: 1rem;
-  padding: 2rem;
+  padding: 2rem 2rem 1.8rem 2rem;
   margin-right: 2rem;
 }
 .bloc-titre {
@@ -309,7 +309,7 @@ article p {
   border-radius: 1rem;
   overflow: hidden;
   margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   border: white solid 0.25rem;
   box-shadow: 2px 2px 5px #C0C0C0;
 }
@@ -453,21 +453,31 @@ footer ul{
   
   .bloc-section {
     align-items: start;
-    grid-template-columns: 6fr 4fr;
   }
-  .container-hebergement {
-    grid-template-columns: repeat(2, 1fr);
-  }
+
   .container-footer {
     margin-left: 3rem;
   }
+
+  .footer-hebergement {
+    margin-left: 14rem;
+  }
+  .footer-assistance {
+    margin-left: 18rem;
+  }
   
+}
+@media screen and (max-width:1110px){
+  .container-hebergement {
+    grid-template-columns: repeat(2, 1fr);
+  }
   .footer-hebergement {
     margin-left: 6rem;
   }
   .footer-assistance {
     margin-left: 6rem;
   }
+
   
 }
 
