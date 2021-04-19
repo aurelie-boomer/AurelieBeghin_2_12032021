@@ -4,9 +4,9 @@
 }
 body {
   font-family: "Raleway", Arial, sans-serif;
-  /*display: flex;
+  display: flex;
   flex-direction: column;
-  align-items: center;*/
+  max-width: 1440px;
 }
 
 body a {
@@ -201,23 +201,22 @@ label {
 .info-logement {
   display: flex;
   align-items: center;
-  margin: 2rem 2.5rem 2rem 2.5rem;
+  margin: 2rem 0.5rem 2rem 2rem;
+  border-radius: 100%;
 }
 .info {
   /*bulle du I*/
-  border-radius: 50%;
+  border-radius: 100%;
   border: rgba(217, 217, 217) solid 1.5px;
   color: #0065fc;
-  width: 24px;
-  height: 24px;
+  width: 1.4rem;
+  height: 1.4rem;
   margin-right: 1rem;
+  margin-left: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: small;
-}
-.center-p {
-  padding-top: 0.6rem;
 }
 
 /*HEBERGEMENT*/
@@ -283,7 +282,6 @@ article p {
   font-weight: bold;
   margin: 2rem 1rem;
   font-size: medium;
-  padding-top: 1rem;
 }
 /*POPULAIRE*/
 .populaire {
@@ -416,24 +414,40 @@ footer {
   line-height: 2rem;
   justify-content: left;
   display: flex;
+  justify-content: space-around;
   max-width: 1440px;
-  margin-top: 3rem;
+  margin-top: 1rem;
   padding-bottom: 1.5rem;
   padding-top: 2rem;
 }
 .container-footer {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   width: 100%;
   max-width: 1440px;
-  padding-right: 24rem;
+  margin-left: 3rem;
+
+}
+footer ul{
+  padding-left: 0;
+}
+.footer-propos{
+  
+}
+.footer-hebergement{
+  margin-left: 6rem;
+  
+}
+.footer-assistance{
+  margin-left: 6rem;
+  
 }
 
 
 
-/*RESPONSIVE*/
+                                                        /*RESPONSIVE*/
 
-@media screen and (max-width: 1337px) {
+@media screen and (max-width: 1440px) {
   .bloc-section {
     align-items: start;
     grid-template-columns: 6fr 4fr;
@@ -442,36 +456,14 @@ footer {
     grid-template-columns: repeat(2, 1fr);
   }
   .container-footer {
-    display: flex;
-    margin-left: 1rem;
-  }
-  footer h3 {
-    padding: 1rem 0 1rem 2.5rem;
-  }
-  .footer-propos{
-    margin-left: 0rem;
-  }
-  .footer-hebergement {
-    margin-left: 14rem;
-  }
-  .footer-assistance {
-    margin-left: 14rem;
+    margin-left: 3rem;
   }
   
-}
-@media screen and (max-width: 1110px) {
-  
-  .padding-etoile {
-    padding-bottom: 0;
-  }
-  .container-footer {
-    margin-left: 0;
-  }
   .footer-hebergement {
-    margin-left: 14rem;
+    margin-left: 6rem;
   }
   .footer-assistance {
-    margin-left: 14rem;
+    margin-left: 6rem;
   }
   
 }
@@ -579,11 +571,15 @@ footer {
     height: auto;
     display: flex;
   }
+  .container-footer{
+    display: flex;
+    align-items: flex-start;
+  }
   .footer-hebergement{
-    margin-left: 1rem;
+    margin-left: 4rem;
   }
   .footer-assistance{
-    margin-left: 1rem;
+    margin-left: 4rem;
   }
 
 @media screen and (max-width: 660px) {
@@ -677,7 +673,7 @@ footer {
   .div-filtres {
     display: flex;
     flex-wrap: wrap;
-    padding-left: 1rem;
+    padding-left: 0.5rem;
   }
   .bloc-filtre {
     display: flex;
@@ -692,8 +688,12 @@ footer {
     height: 45px;
   }
   .info-logement{
-    padding-left: 1rem;
-    margin-top: 1.5rem;
+    align-items: flex-start;
+    margin: 1.5rem 0rem 2rem 0.5rem;
+    
+  }
+  .info{
+    width: 1.8rem;
   }
   .bloc-section {
     /*HEBERGEMENT */
@@ -734,7 +734,7 @@ footer {
   }
   .bloc-titre{
     padding-left: 2rem;
-    padding-right: 2rem;
+    padding-right: 1rem;
   }
   .bloc-article {
     display: flex;
@@ -780,18 +780,20 @@ footer {
     justify-content: left;
   }
   .container-footer {
-    margin: 0;
+    margin-left: 2rem;
     display: flex;
     flex-direction: column;
   }
   .footer-propos{
-    margin-left: 0;
+    margin-bottom: 2rem;
   }
   .footer-hebergement {
-    margin-left: 0;
+    margin-left: 0rem;
+    margin-bottom: 2rem;
   }
   .footer-assistance {
-    margin-left: 0;
+    margin-left: 0rem;
+    margin-bottom: 2rem;
   }
 }
 
