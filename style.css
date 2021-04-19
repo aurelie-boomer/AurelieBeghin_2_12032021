@@ -6,7 +6,6 @@ body {
   font-family: "Raleway", Arial, sans-serif;
   display: flex;
   flex-direction: column;
-  max-width: 1440px;
 }
 
 body a {
@@ -431,9 +430,6 @@ footer {
 footer ul{
   padding-left: 0;
 }
-.footer-propos{
-  
-}
 .footer-hebergement{
   margin-left: 6rem;
   
@@ -446,8 +442,15 @@ footer ul{
 
 
                                                         /*RESPONSIVE*/
+@media screen and (min-width:1441px){
+  body{
+    align-items: center;
+  }
+  
+}
 
 @media screen and (max-width: 1440px) {
+  
   .bloc-section {
     align-items: start;
     grid-template-columns: 6fr 4fr;
@@ -566,7 +569,7 @@ footer ul{
   .h2-activite {
     padding-top: 0;
   }
-}
+
   footer {
     height: auto;
     display: flex;
@@ -581,8 +584,9 @@ footer ul{
   .footer-assistance{
     margin-left: 4rem;
   }
-
+}
 @media screen and (max-width: 660px) {
+
   header {
     flex-wrap: wrap;
   }
@@ -796,5 +800,3 @@ footer ul{
     margin-bottom: 2rem;
   }
 }
-
-
